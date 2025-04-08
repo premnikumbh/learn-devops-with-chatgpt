@@ -1,0 +1,272 @@
+139-162-5-218 login: premsn                                                  
+Password:                                                                    
+Last login: Tue Apr  8 08:09:31 from localhost, 38.99.128.251                
+              ##############################################                 
+              # webminal.org => your linux  ~ on the cloud #                 
+              # Please type `bash` to launch bash shell    #                 
+              ##############################################                 
+-sh-4.2$ pwd                                                                 
+/home/premsn                                                                 
+-sh-4.2$ ls -alh                                                             
+total 11M                                                                    
+drwx------.      2 premsn premsn  115 Apr  8 08:05 .
+drwxr-xr-x. 305285 root   root   7.4M Apr  8 08:05 ..
+-rw-r--r--.      1 premsn premsn   18 Nov 24  2021 .bash_logout              
+-rw-r--r--.      1 premsn premsn  193 Nov 24  2021 .bash_profile             
+-rw-r--r--.      1 premsn premsn  231 Nov 24  2021 .bashrc                   
+-rw-r--r--.      1 premsn premsn  334 Jan  7  2022 .emacs                    
+-rw-r--r--.      1 root   root      9 Apr  8 08:05 .magic_string.txt         
+-rw-r--r--.      1 premsn premsn  658 Apr  7  2020 .zshrc                    
+-sh-4.2$ touch practice.txt                                                  
+-sh-4.2$ ls -alh                                                             
+total 11M                                                                    
+drwx------.      2 premsn premsn  135 Apr  8 08:12 .
+drwxr-xr-x. 305285 root   root   7.4M Apr  8 08:05 ..
+-rw-r--r--.      1 premsn premsn   18 Nov 24  2021 .bash_logout              
+-rw-r--r--.      1 premsn premsn  193 Nov 24  2021 .bash_profile             
+-rw-r--r--.      1 premsn premsn  231 Nov 24  2021 .bashrc                   
+-rw-r--r--.      1 premsn premsn  334 Jan  7  2022 .emacs                    
+-rw-r--r--.      1 root   root      9 Apr  8 08:05 .magic_string.txt         
+-rw-rw-r--.      1 premsn premsn    0 Apr  8 08:12 practice.txt              
+-rw-r--r--.      1 premsn premsn  658 Apr  7  2020 .zshrc                    
+-sh-4.2$ ls                                                                  
+practice.txt                                                                 
+-sh-4.2$ rm practice.txt                                                     
+-sh-4.2$ ls -alh                                                             
+total 11M                                                                    
+drwx------.      2 premsn premsn  115 Apr  8 08:13 .
+drwxr-xr-x. 305285 root   root   7.4M Apr  8 08:05 ..
+-rw-r--r--.      1 premsn premsn   18 Nov 24  2021 .bash_logout              
+-rw-r--r--.      1 premsn premsn  193 Nov 24  2021 .bash_profile             
+-rw-r--r--.      1 premsn premsn  231 Nov 24  2021 .bashrc                   
+-rw-r--r--.      1 premsn premsn  334 Jan  7  2022 .emacs                    
+-rw-r--r--.      1 root   root      9 Apr  8 08:05 .magic_string.txt         
+-rw-r--r--.      1 premsn premsn  658 Apr  7  2020 .zshrc                    
+-sh-4.2$ touch f1.txt                                                        
+-sh-4.2$ cp f1.txt f2.txt                                                    
+-sh-4.2$ ls                                                                  
+f1.txt  f2.txt                                                               
+-sh-4.2$ ls -alh                                                             
+total 11M                                                                    
+drwx------.      2 premsn premsn  143 Apr  8 08:14 .
+drwxr-xr-x. 305285 root   root   7.4M Apr  8 08:05 ..
+-rw-r--r--.      1 premsn premsn   18 Nov 24  2021 .bash_logout              
+-rw-r--r--.      1 premsn premsn  193 Nov 24  2021 .bash_profile             
+-rw-r--r--.      1 premsn premsn  231 Nov 24  2021 .bashrc                   
+-rw-r--r--.      1 premsn premsn  334 Jan  7  2022 .emacs                    
+-rw-rw-r--.      1 premsn premsn    0 Apr  8 08:14 f1.txt                    
+-rw-rw-r--.      1 premsn premsn    0 Apr  8 08:14 f2.txt                    
+-rw-r--r--.      1 root   root      9 Apr  8 08:05 .magic_string.txt         
+-rw-r--r--.      1 premsn premsn  658 Apr  7  2020 .zshrc                    
+-sh-4.2$ mv f2.txt f3.txt                                                    
+-sh-4.2$ ls -alh                                                             
+total 11M                                                                    
+drwx------.      2 premsn premsn  143 Apr  8 08:15 .
+drwxr-xr-x. 305286 root   root   7.4M Apr  8 08:15 ..
+-rw-r--r--.      1 premsn premsn   18 Nov 24  2021 .bash_logout              
+-rw-r--r--.      1 premsn premsn  193 Nov 24  2021 .bash_profile             
+-rw-r--r--.      1 premsn premsn  231 Nov 24  2021 .bashrc                   
+-rw-r--r--.      1 premsn premsn  334 Jan  7  2022 .emacs                    
+-rw-rw-r--.      1 premsn premsn    0 Apr  8 08:14 f1.txt                    
+-rw-rw-r--.      1 premsn premsn    0 Apr  8 08:14 f3.txt                    
+-rw-r--r--.      1 root   root      9 Apr  8 08:05 .magic_string.txt         
+-rw-r--r--.      1 premsn premsn  658 Apr  7  2020 .zshrc                    
+-sh-4.2$ mkdir d1                                                            
+-sh-4.2$ ls                                                                  
+d1  f1.txt  f3.txt
+-sh-4.2$ rmdir d1                                                            
+-sh-4.2$ mkdir t                                                             
+-sh-4.2$ mv f1.txt /t/f1.txt                                                 
+mv: cannot move ‘f1.txt’ to ‘/t/f1.txt’: No such file or directory           
+-sh-4.2$ mv f1.txt /t/                                                       
+mv: cannot create regular file ‘/t/’: Not a directory                        
+-sh-4.2$ ls                                                                  
+f1.txt  f3.txt  t
+-sh-4.2$ mv /f1.txt /t/f1.txt                                                
+mv: cannot stat ‘/f1.txt’: No such file or directory                         
+-sh-4.2$ mv /f1.txt /t/f2.txt                                                
+mv: cannot stat ‘/f1.txt’: No such file or directory                         
+-sh-4.2$ touch test.txt                                                      
+-sh-4.2$ mv /test.txt /f/newname.txt                                         
+mv: cannot stat ‘/test.txt’: No such file or directory                       
+-sh-4.2$ mv home/premsn/f1.txt home/premsn/t/f2.txt                          
+mv: cannot stat ‘home/premsn/f1.txt’: No such file or directory              
+-sh-4.2$ mv /home/premsn/f1.txt /home/premsn/t/f2.txt                        
+-sh-4.2$ find / -type f -name "*.log" 2>/dev/null                            
+-sh-4.2$ ls                                                                  
+f3.txt  t  test.txt
+-sh-4.2$ cd /home                                                            
+-sh-4.2$ ls -alh                                                             
+^[[A^[[B^[[A^C                                                               
+-sh-4.2$ ls                                                                  
+ls: memory exhausted                                                         
+-sh-4.2$ ls                                                                  
+ls: memory exhausted                                                         
+-sh-4.2$ cd /home/premsn                                                     
+-sh-4.2$ ls                                                                  
+f3.txt  t  test.txt
+-sh-4.2$ touch 1.log                                                         
+-sh-4.2$ find / -type f -name "*.log" 2>/dev/null                            
+-sh-4.2$ find /home -type f -name "*.log" 2>/dev/null                        
+-sh-4.2$ find /tmp -type f -name "*.log" 2>/dev/null                         
+-sh-4.2$ ls /var/log                                                         
+ls: cannot open directory /var/log: Permission denied                        
+-sh-4.2$ echo "This is a test log file." > /tmp/testfile.log                 
+-sh-4.2$                                                                     
+-sh-4.2$ find /tmp -type f -name "*.log" 2>/dev/null                         
+/tmp/testfile.log                                                            
+-sh-4.2$ find / -type f -size +1M 2>/dev/null                                
+/boot/vmlinuz-3.10.0-1160.36.2.el7.x86_64                                    
+/boot/initramfs-3.10.0-1160.36.2.el7.x86_64.img                              
+/boot/vmlinuz-3.10.0-1160.49.1.el7.x86_64                                    
+/boot/initramfs-3.10.0-1160.49.1.el7.x86_64.img                              
+/boot/vmlinuz-5.4.168-1.el7.elrepo.x86_64                                    
+/boot/initramfs-5.4.168-1.el7.elrepo.x86_64.img                              
+/boot/initramfs-3.10.0-1160.36.2.el7.x86_64kdump.img                         
+/var/cache/yum/x86_64/7/updates/f19044932626155f0cd849e88972b84875fc85e3308b4
+d622844a911c4ef54d0-primary.sqlite.bz2                                       
+/var/cache/yum/x86_64/7/updates/gen/primary_db.sqlite                        
+/var/cache/yum/x86_64/7/updates/gen/filelists_db.sqlite                      
+/var/cache/yum/x86_64/7/elrepo/gen/primary_db.sqlite                         
+/var/cache/yum/x86_64/7/mysql56-community/gen/primary_db.sqlite              
+/var/cache/yum/x86_64/7/mysql56-community/gen/filelists_db.sqlite            
+/var/cache/yum/x86_64/7/mysql56-community/5e0083c4ff999f3a794e971176fa3aea8af
+ac5c8-filelists.sqlite.bz2                                                   
+/var/cache/yum/x86_64/7/epel/2ec3bdbc2ddb5be4d6374fc5f9223a38dba1efa9707f6211
+51f44c7c0f54764e-primary.sqlite.bz2                                          
+/var/cache/yum/x86_64/7/epel/gen/primary_db.sqlite                           
+/var/cache/yum/x86_64/7/epel/gen/filelists_db.sqlite                         
+/var/cache/yum/x86_64/7/epel/3752c356125732db9e6ccf77f1cba5e50ca21cec64941b19
+55751c3b676b8d18-filelists.sqlite.bz2                                        
+/var/cache/yum/x86_64/7/base/gen/primary_db.sqlite                           
+/var/cache/yum/x86_64/7/base/gen/filelists_db.sqlite                         
+/var/cache/yum/x86_64/7/base/6d0c3a488c282fe537794b5946b01e28c7f44db79097bb06
+826e1c0c88bad5ef-primary.sqlite.bz2                                          
+/var/cache/yum/x86_64/7/base/d6d94c7d406fe7ad4902a97104b39a0d8299451832a97f31
+d71653ba982c955b-filelists.sqlite.bz2                                        
+/var/cache/yum/x86_64/7/elrepo-kernel/gen/primary_db.sqlite                  
+/var/cache/yum/x86_64/7/elrepo-kernel/677cdb30eb8a60f8523edc5d234a43a352d74c4
+da29e5ab6a321a7abcd66ebea-primary.sqlite.bz2                                 
+/var/cache/yum/x86_64/7/mysql-tools-community/gen/filelists_db.sqlite        
+/var/cache/yum/x86_64/7/extras/gen/primary_db.sqlite                         
+/var/cache/yum/x86_64/7/extras/gen/filelists_db.sqlite                       
+/var/lib/sepolgen/interface_info                                             
+/var/lib/rpm/Providename                                                     
+/var/lib/rpm/Dirnames                                                        
+/var/lib/rpm/__db.003                                                        
+/var/lib/rpm/Packages                                                        
+/var/lib/rpm/Basenames                                                       
+/sys/devices/pci0000:00/0000:00:01.0/resource0_wc                            
+/sys/devices/pci0000:00/0000:00:01.0/resource0                               
+/etc/passwd                                                                  
+/etc/group                                                                   
+/etc/group-                                                                  
+/etc/passwd-                                                                 
+/etc/selinux/targeted/contexts/files/file_contexts.bin                       
+null4.2$ find / -type f -mtime -1 2>/dev/                                    
+-sh: /dev/nullfind: Permission denied                                        
+-sh-4.2$ ln f1.txt f2.txt                                                    
+ln: failed to access ‘f1.txt’: No such file or directory                     
+-sh-4.2$ ls                                                                  
+1.log  f3.txt  t  test.txt
+-sh-4.2$ touch f1.txt                                                        
+-sh-4.2$ ln f1.txt f2.txt                                                    
+-sh-4.2$ ln -l f1.txt f3.txt                                                 
+ln: invalid option -- 'l'                                                    
+Try 'ln --help' for more information.                                        
+-sh-4.2$ ln -s f1.txt f3.txt                                                 
+ln: failed to create symbolic link ‘f3.txt’: File exists                     
+-sh-4.2$ ln -s f1.txt f4.txt                                                 
+-sh-4.2$ ls                                                                  
+1.log  f1.txt  f2.txt  f3.txt  f4.txt  t  test.txt
+-sh-4.2$ ls -alh                                                             
+total 11M                                                                    
+drwx------.      3 premsn premsn  209 Apr  8 08:54 .
+drwxr-xr-x. 305293 root   root   7.4M Apr  8 08:50 ..
+-rw-rw-r--.      1 premsn premsn    0 Apr  8 08:31 1.log                     
+-rw-r--r--.      1 premsn premsn   18 Nov 24  2021 .bash_logout              
+-rw-r--r--.      1 premsn premsn  193 Nov 24  2021 .bash_profile             
+-rw-r--r--.      1 premsn premsn  231 Nov 24  2021 .bashrc                   
+-rw-r--r--.      1 premsn premsn  334 Jan  7  2022 .emacs                    
+-rw-rw-r--.      2 premsn premsn    0 Apr  8 08:53 f1.txt                    
+-rw-rw-r--.      2 premsn premsn    0 Apr  8 08:53 f2.txt                    
+-rw-rw-r--.      1 premsn premsn    0 Apr  8 08:14 f3.txt                    
+lrwxrwxrwx.      1 premsn premsn    6 Apr  8 08:54 f4.txt -> f1.txt
+-rw-r--r--.      1 root   root      9 Apr  8 08:05 .magic_string.txt         
+drwxrwxr-x.      2 premsn premsn   20 Apr  8 08:23 t
+-rw-rw-r--.      1 premsn premsn    0 Apr  8 08:20 test.txt                  
+-rw-r--r--.      1 premsn premsn  658 Apr  7  2020 .zshrc                    
+-sh-4.2$ `du -ah /home                                                       
+> bvbvb                                                                      
+> ^C                                                                         
+-sh-4.2$ du -ah /home                                                        
+du: fts_read failed: /home: Cannot allocate memory
+-sh-4.2$ wc -l /etc/passwd                                                   
+wc: /etc/passwdwc: No such file or directory                                 
+  338659 /etc/passwd                                                         
+  338659 total                                                               
+-sh-4.2$ grep -i "Failed" /var/log/syslog                                    
+grep: /var/log/syslog: No such file or directory                             
+-sh-4.2$touch clean.sh                                                       
+-sh-4.2$ nano clean.sh                                                       
+-sh-4.2$ wc -l /home/premsn/clean.sh
+16 /home/premsn/clean.sh                                                     
+-sh-4.2$ chmod +x clean.sh                                                   
+-sh-4.2$ ls /tmp                                                             
+systemd-private-7546257ca1b249deac8accdfed75e589-chronyd.service-bvMgR9
+systemd-private-7546257ca1b249deac8accdfed75e589-nginx.service-EDvRVY
+systemd-private-7546257ca1b249deac8accdfed75e589-systemd-logind.service-u6Ziy
+3
+systemd-private-c871e1d4c094496da408b7ffb64d905e-chronyd.service-bkxqS7
+systemd-private-c871e1d4c094496da408b7ffb64d905e-nginx.service-M649H2
+-sh-4.2$ ./clean.sh                                                          
+-sh: ./clean.sh: Permission denied                                           
+-sh-4.2$ su                                                                  
+Password:                                                                    
+su: Authentication failure                                                   
+-sh-4.2$ nano clean.sh                                                       
+-sh-4.2$ mkdir ~/test_tmp                                                    
+-sh-4.2$ cd /test_tmp                                                        
+-sh: cd: /test_tmp: No such file or directory                                
+-sh-4.2$ cd home/premsn/test_tmp                                             
+-sh: cd: home/premsn/test_tmp: No such file or directory                     
+-sh-4.2$ pwd                                                                 
+/home/premsn                                                                 
+-sh-4.2$                                                                     
+-sh-4.2$ touch ~/test_tmp/file1.tmp                                          
+-sh-4.2$ touch ~/test_tmp/file11.tmp                                         
+-sh-4.2$ touch ~/test_tmp/file111.tmp                                        
+-sh-4.2$ touch ~/test_tmp/file1111.tmp                                       
+-sh-4.2$ nano clean.sh                                                       
+-sh-4.2$ ls ~test_tmp
+ls: cannot access ~test_tmp: No such file or directory                       
+-sh-4.2$ ls ~/test_tmp                                                       
+file1111.tmp  file111.tmp  file11.tmp  file1.tmp                             
+-sh-4.2$ chmod +x clean.sh                                                   
+-sh-4.2$ ./clean.sh                                                          
+-sh: ./clean.sh: Permission denied                                           
+-sh-4.2$ nano clean.sh                                                       
+-sh-4.2$ mv ~/test_tmp /home/premsn/t                                        
+-sh-4.2$ ls                                                                  
+1.log  clean.sh  f1.txt  f2.txt  f3.txt  f4.txt  t  test.txt
+-sh-4.2$ ls /t                                                               
+ls: cannot access /t: No such file or directory                              
+-sh-4.2$ cd /t                                                               
+-sh: cd: /t: No such file or directory                                       
+-sh-4.2$ nano clean.sh                                                       
+-sh-4.2$ ls /home/premsn/t
+f2.txt  test_tmp
+-sh-4.2$ ./clean.sh                                                          
+-sh: ./clean.sh: Permission denied                                           
+-sh-4.2$ chmod +x clean.sh                                                   
+-sh-4.2$ ./clean.sh                                                          
+-sh: ./clean.sh: Permission denied                                           
+-sh-4.2$ ls -ld home/premsn/test_cleanup                                     
+ls: cannot access home/premsn/test_cleanup: No such file or directory        
+-sh-4.2$ ls -ld home/premsn/t/test_cleanup                                   
+ls: cannot access home/premsn/t/test_cleanup: No such file or directory      
+-sh-4.2$ ls -ld home/premsn/t/test_tmp                                       
+ls: cannot access home/premsn/t/test_tmp: No such file or directory          
+-sh-4.2$ ls -ld /home/premsn/t/test_tmp                                      
+drwxrwxr-x. 2 premsn premsn 80 Apr  8 09:20 /home/premsn/t/test_tmp
+-sh-4.2$     
