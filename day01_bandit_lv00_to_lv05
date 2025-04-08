@@ -7,3 +7,18 @@ level 1 - ZjLjTmM6FvvyRnrb2rfNWOZOTa6ip5If
 
 had to use cat./- to see the password for next level
 level 2 - 263JGJPfgU6LtdEvgfWU1XP5yac29mFx
+
+the file containing the password for next level had spaces in it.
+had to use backslash after each word to point at that file. used cat to display the content of that file
+
+level 3 - MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
+
+the folder was hidden, had to use cd ~/inhere to change dir. and open using nano
+
+level 4 - 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
+
+the folder was hidden, and there were multiple files. had to chech the file type using file ./* command to check the file having ASCII coding ofr the password.
+
+level 5 - 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
+
+with this i have succesfully cracked pasword upto level 5.
