@@ -22,3 +22,18 @@ the folder was hidden, and there were multiple files. had to chech the file type
 level 5 - 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 
 with this i have succesfully cracked pasword upto level 5.
+
+these were conditions. 
+human-readable, 1033 bytes in size, not executable
+i had learn about adding on conditions to find. i added size to find .
+this was command i needed to use
+find . -type f -size 1033c
+this gave single file output and hence further conditions were not required.
+however following are the addon conditions for proper usage.
+! -executable ; - not executable
+-exec file '{}' \ - to show file types
+grep ascii to filter ascii
+
+
+
+level 6 - HWasnPhtq9AVKe0dmk45nxy20cvUa6EG
