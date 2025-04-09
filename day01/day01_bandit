@@ -13,11 +13,11 @@ had to use backslash after each word to point at that file. used cat to display 
 
 level 3 - MNk8KNH3Usiio41PRUEoDFPqfxLPlSmx
 
-the folder was hidden, had to use cd ~/inhere to change dir. and open using nano
+the file was hidden, had to use cd ~/inhere to change dir. and open using nano
 
 level 4 - 2WmrDFRmJIq3IPxneAaMGhap0pFhF3NJ
 
-the folder was hidden, and there were multiple files. had to chech the file type using file ./* command to check the file having ASCII coding ofr the password.
+there were multiple files. had to chech the file type using file ./* command to check the file having ASCII coding ofr the password.
 
 level 5 - 4oQYVPkxZOOEOO5pTW81FB8j8lxXGUQw
 
