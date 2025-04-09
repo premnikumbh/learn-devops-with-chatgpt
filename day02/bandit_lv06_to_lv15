@@ -48,4 +48,19 @@ tar -xf file for tar files
 
 level 13 - FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 
+password for level 14 was on only accesible by user 14. private key for login was given. 
+ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
 
+level 14 - MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
+
+The password for the next level can be retrieved by submitting the password of the current level to port 30000 on localhost
+used nc localhost 30000 
+entered level 14 pw and got level 15 pw as output
+
+level 15 - 8xCjnmgoKbGLhHFAZlGE5Tmu4M2tKJQo
+
+The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL/TLS encryption.
+used openssl s_client -connect localhost:30001 to connect using ssl protocol
+
+
+level 16 - kSkvUpMQ7lBYyCM4GBPvCvT1BfWRy0Dx
