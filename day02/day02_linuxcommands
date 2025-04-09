@@ -1,1 +1,1443 @@
+Script started on 2025-04-09 05:48:21+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="97" LINES="26"]
+To run a command as administrator (user "root"), use "sudo <command>".
+See "man sudo_root" for details.
+
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d /etc/passwd[1P /etc/passwd[1P /etc/passwd[1P/etc/passwd[1P /etc/passwd[1P /etc/passwda /etc/passwdt /etc/passwd
+[?2004l
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+uucp:x:10:10:uucp:/var/spool/uucp:/usr/sbin/nologin
+proxy:x:13:13:proxy:/bin:/usr/sbin/nologin
+www-data:x:33:33:www-data:/var/www:/usr/sbin/nologin
+backup:x:34:34:backup:/var/backups:/usr/sbin/nologin
+list:x:38:38:Mailing List Manager:/var/list:/usr/sbin/nologin
+irc:x:39:39:ircd:/run/ircd:/usr/sbin/nologin
+_apt:x:42:65534::/nonexistent:/usr/sbin/nologin
+nobody:x:65534:65534:nobody:/nonexistent:/usr/sbin/nologin
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:996:996:systemd Time Synchronization:/:/usr/sbin/nologin
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+messagebus:x:101:101::/nonexistent:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+systemd-resolve:x:991:991:systemd Resolver:/:/usr/sbin/nologin
+uuidd:x:103:103::/run/uuidd:/usr/sbin/nologin
+landscape:x:104:105::/var/lib/landscape:/usr/sbin/nologin
+polkitd:x:990:990:User for polkitd:/:/usr/sbin/nologin
+prem:x:1000:1000:,,,:/home/prem:/bin/bash
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cat /etc/passwd[1P[1@u[C[C /etc/passwdd /etc/passwd[C /etc/passwd: /etc/passwd[1P /etc/passwd" /etc/passwd: /etc/passwd" /etc/passwd[C /etc/passwdf /etc/passwd1 /etc/passwd[C /etc/passwd[1P/etc/passwd
+[?2004l
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut d ":" f1 /etc/passwd[1@-
+[?2004l
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" f1 /etc/passwd[1@-
+[?2004l
+root
+daemon
+bin
+sys
+sync
+games
+man
+lp
+mail
+news
+uucp
+proxy
+www-data
+backup
+list
+irc
+_apt
+nobody
+systemd-network
+systemd-timesync
+dhcpcd
+messagebus
+syslog
+systemd-resolve
+uuidd
+landscape
+polkitd
+prem
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f1 /etc/passwd[C[1P /etc/passwd2 /etc/passwd
+[?2004l
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f2 /etc/passwd[C[1P /etc/passwd3 /etc/passwd
+[?2004l
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+13
+33
+34
+38
+39
+42
+65534
+998
+996
+100
+101
+102
+991
+103
+104
+990
+1000
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f3 /etc/passwd[1P /etc/passwd5 /etc/passwd
+[?2004l
+root
+daemon
+bin
+sys
+sync
+games
+man
+lp
+mail
+news
+uucp
+proxy
+www-data
+backup
+Mailing List Manager
+ircd
+
+nobody
+systemd Network Management
+systemd Time Synchronization
+DHCP Client Daemon,,,
+
+
+systemd Resolver
+
+
+User for polkitd
+,,,
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f5 /etc/passwd | sort
+[?2004l
+
+
+
+
+
+,,,
+DHCP Client Daemon,,,
+Mailing List Manager
+User for polkitd
+backup
+bin
+daemon
+games
+ircd
+lp
+mail
+man
+news
+nobody
+proxy
+root
+sync
+sys
+systemd Network Management
+systemd Resolver
+systemd Time Synchronization
+uucp
+www-data
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f5 /etc/passwd | sort[1P[1@1
+[?2004l
+_apt
+backup
+bin
+daemon
+dhcpcd
+games
+irc
+landscape
+list
+lp
+mail
+man
+messagebus
+news
+nobody
+polkitd
+prem
+proxy
+root
+sync
+sys
+syslog
+systemd-network
+systemd-resolve
+systemd-timesync
+uucp
+uuidd
+www-data
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f1 /etc/passwd | sort5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K3[C[C[C[C[C[C[C[C[C[C[C[C5[C[C[C[C[C[C[C[C[C[C[C[C | sort1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcp /home/pre[Kem/day02.txt /mnt/c/wsl
+[?2004l
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cp /home/prem/day02.txt /mnt/c/wsl
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Put -d ":" -f1 /etc/passwd | sort5[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K3[C[C[C[C[C[C[C[C[C[C[C[C2[C[C[C[C[C[C[C[C[C[C[C[C1[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[9Pat[C[C[C[C[C[C[C[C[C[C[C[C[1Pnano day02.txtls[Knano day02ls[Kcd /home/prem[8Plear[K[K[K[K[Kcd /home/premls[Knano day02ls[Knano day02.txtcat /etc/passwd[9@ut d ":" f1[C[C[C[C[C[C[C[C[C[C[C[C[1@-[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1@-[C[C[C[C[C[C[C[C[C[C[C[C[C[C2[C[C[C[C[C[C[C[C[C[C[C[C3[C[C[C[C[C[C[C[C[C[C[C[C5[C[C[C[C[C[C[C[C[C[C[C[C | sort1[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cp /home/prem/day02.txt /mnt/c/wsl
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Kcp /home/prem/day02.txt /mnt/c/wsl
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1Put -d ":" -f1 /etc/passwd | sort | [K[K[K[K[K[K[Kuniq
+[?2004l
+root
+daemon
+bin
+sys
+sync
+games
+man
+lp
+mail
+news
+uucp
+proxy
+www-data
+backup
+list
+irc
+_apt
+nobody
+systemd-network
+systemd-timesync
+dhcpcd
+messagebus
+syslog
+systemd-resolve
+uuidd
+landscape
+polkitd
+prem
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f1 /etc/passwd | uniq[C[1P[1@2
+[?2004l
+x
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f2 /etc/passwd | uniq[K[K[K[K[K[K[K
+[?2004l
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+x
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f2 /etc/passwd | uniq
+[?2004l
+x
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f2 /etc/passwd | uniq[K | uniq[1P[1@3
+[?2004l
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+13
+33
+34
+38
+39
+42
+65534
+998
+996
+100
+101
+102
+991
+103
+104
+990
+1000
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f3 /etc/passwd | uniq[C[K[K[K[K[K[K[K[Kd
+[?2004l
+0
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+13
+33
+34
+38
+39
+42
+65534
+998
+996
+100
+101
+102
+991
+103
+104
+990
+1000
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f3 /etc/passwd | sort | uniq
+[?2004l
+0
+1
+10
+100
+1000
+101
+102
+103
+104
+13
+2
+3
+33
+34
+38
+39
+4
+42
+5
+6
+65534
+7
+8
+9
+990
+991
+996
+998
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f3 /etc/passwd | sort | uniq[1P[1@2
+[?2004l
+x
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f2 /etc/passwd | sort | uniq[C[1P[1@1
+[?2004l
+_apt
+backup
+bin
+daemon
+dhcpcd
+games
+irc
+landscape
+list
+lp
+mail
+man
+messagebus
+news
+nobody
+polkitd
+prem
+proxy
+root
+sync
+sys
+syslog
+systemd-network
+systemd-resolve
+systemd-timesync
+uucp
+uuidd
+www-data
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cut -d ":" -f1 /etc/passwd | sort | uniq
+[?2004l
+_apt
+backup
+bin
+daemon
+dhcpcd
+games
+irc
+landscape
+list
+lp
+mail
+man
+messagebus
+news
+nobody
+polkitd
+prem
+proxy
+root
+sync
+sys
+syslog
+systemd-network
+systemd-resolve
+systemd-timesync
+uucp
+uuidd
+www-data
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ head -5 /etc/passwd
+[?2004l
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ head -5 /etc/passwd[1P /etc/passwd1 /etc/passwd
+[?2004l
+root:x:0:0:root:/root:/bin/bash
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ head -1 /etc/passwd[C[1P[1P[1P[1P[1@t[1@a[1@i[1@l
+[?2004l
+prem:x:1000:1000:,,,:/home/prem:/bin/bash
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ tail 10 /etc/passwd
+[?2004l
+tail: cannot open '10' for reading: No such file or directory
+==> /etc/passwd <==
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:996:996:systemd Time Synchronization:/:/usr/sbin/nologin
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+messagebus:x:101:101::/nonexistent:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+systemd-resolve:x:991:991:systemd Resolver:/:/usr/sbin/nologin
+uuidd:x:103:103::/run/uuidd:/usr/sbin/nologin
+landscape:x:104:105::/var/lib/landscape:/usr/sbin/nologin
+polkitd:x:990:990:User for polkitd:/:/usr/sbin/nologin
+prem:x:1000:1000:,,,:/home/prem:/bin/bash
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ tail 10 /etc/passwd[C[C[1@-
+[?2004l
+systemd-network:x:998:998:systemd Network Management:/:/usr/sbin/nologin
+systemd-timesync:x:996:996:systemd Time Synchronization:/:/usr/sbin/nologin
+dhcpcd:x:100:65534:DHCP Client Daemon,,,:/usr/lib/dhcpcd:/bin/false
+messagebus:x:101:101::/nonexistent:/usr/sbin/nologin
+syslog:x:102:102::/nonexistent:/usr/sbin/nologin
+systemd-resolve:x:991:991:systemd Resolver:/:/usr/sbin/nologin
+uuidd:x:103:103::/run/uuidd:/usr/sbin/nologin
+landscape:x:104:105::/var/lib/landscape:/usr/sbin/nologin
+polkitd:x:990:990:User for polkitd:/:/usr/sbin/nologin
+prem:x:1000:1000:,,,:/home/prem:/bin/bash
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ tail -10 /etc/passwd[1P[C[C[C[C[C[C[C[C[C[C[C[C[C[C-1[C[C[C[C[C[C[C[C[C[C[C[C10[C[C[C[C[C[C[C[C[C[C[C[C[1@-[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[1P[1P[1P[1P[1@h[1@e[1@e[1P[1@a[1@d
+[?2004l
+root:x:0:0:root:/root:/bin/bash
+daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
+bin:x:2:2:bin:/bin:/usr/sbin/nologin
+sys:x:3:3:sys:/dev:/usr/sbin/nologin
+sync:x:4:65534:sync:/bin:/bin/sync
+games:x:5:60:games:/usr/games:/usr/sbin/nologin
+man:x:6:12:man:/var/cache/man:/usr/sbin/nologin
+lp:x:7:7:lp:/var/spool/lpd:/usr/sbin/nologin
+mail:x:8:8:mail:/var/mail:/usr/sbin/nologin
+news:x:9:9:news:/var/spool/news:/usr/sbin/nologin
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ ls -alh
+[?2004l
+total 44K
+drwxr-x--- 4 prem prem 4.0K Apr  9 05:41 [0m[01;34m.[0m
+drwxr-xr-x 3 root root 4.0K Apr  9 05:14 [01;34m..[0m
+-rw------- 1 prem prem   52 Apr  9 05:42 .bash_history
+-rw-r--r-- 1 prem prem  220 Apr  9 05:14 .bash_logout
+-rw-r--r-- 1 prem prem 3.7K Apr  9 05:14 .bashrc
+drwx------ 2 prem prem 4.0K Apr  9 05:15 [01;34m.cache[0m
+drwxr-xr-x 3 prem prem 4.0K Apr  9 05:26 [01;34m.local[0m
+-rw-r--r-- 1 prem prem    0 Apr  9 05:15 .motd_shown
+-rw-r--r-- 1 prem prem  807 Apr  9 05:14 .profile
+-rw-r--r-- 1 prem prem  12K Apr  9 05:56 day02.txt
+[?2004h]0;prem@DESKTOP-0FTCP9B: ~[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m~[00m$ cd ..
+[?2004l
+[?2004h]0;prem@DESKTOP-0FTCP9B: /home[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/home[00m$ ls
+[?2004l
+[0m[01;34mprem[0m
+[?2004h]0;prem@DESKTOP-0FTCP9B: /home[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/home[00m$ ls -alh
+[?2004l
+total 12K
+drwxr-xr-x  3 root root 4.0K Apr  9 05:14 [0m[01;34m.[0m
+drwxr-xr-x 22 root root 4.0K Apr  9 05:17 [01;34m..[0m
+drwxr-x---  4 prem prem 4.0K Apr  9 05:41 [01;34mprem[0m
+[?2004h]0;prem@DESKTOP-0FTCP9B: /home[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/home[00m$ cd ..
+[?2004l
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ ls -alh
+[?2004l
+total 2.3M
+drwxr-xr-x  22 root root 4.0K Apr  9 05:17 [0m[01;34m.[0m
+drwxr-xr-x  22 root root 4.0K Apr  9 05:17 [01;34m..[0m
+lrwxrwxrwx   1 root root    7 Apr 22  2024 [01;36mbin[0m -> [01;34musr/bin[0m
+drwxr-xr-x   2 root root 4.0K Feb 26  2024 [01;34mbin.usr-is-merged[0m
+drwxr-xr-x   2 root root 4.0K Apr 22  2024 [01;34mboot[0m
+drwxr-xr-x  16 root root 3.5K Apr  9 05:17 [01;34mdev[0m
+drwxr-xr-x  87 root root 4.0K Apr  9 05:41 [01;34metc[0m
+drwxr-xr-x   3 root root 4.0K Apr  9 05:14 [01;34mhome[0m
+-rwxrwxrwx   1 root root 2.2M Nov  9 16:26 [01;32minit[0m
+lrwxrwxrwx   1 root root    7 Apr 22  2024 [01;36mlib[0m -> [01;34musr/lib[0m
+drwxr-xr-x   2 root root 4.0K Apr  8  2024 [01;34mlib.usr-is-merged[0m
+lrwxrwxrwx   1 root root    9 Apr 22  2024 [01;36mlib64[0m -> [01;34musr/lib64[0m
+drwx------   2 root root  16K Apr  9 05:12 [01;34mlost+found[0m
+drwxr-xr-x   2 root root 4.0K Jan  6 20:13 [01;34mmedia[0m
+drwxr-xr-x   5 root root 4.0K Apr  9 05:13 [01;34mmnt[0m
+drwxr-xr-x   2 root root 4.0K Jan  6 20:13 [01;34mopt[0m
+dr-xr-xr-x 161 root root    0 Apr  9 05:17 [01;34mproc[0m
+drwx------   4 root root 4.0K Apr  9 05:14 [01;34mroot[0m
+drwxr-xr-x  18 root root  540 Apr  9 05:17 [01;34mrun[0m
+lrwxrwxrwx   1 root root    8 Apr 22  2024 [01;36msbin[0m -> [01;34musr/sbin[0m
+drwxr-xr-x   2 root root 4.0K Mar 31  2024 [01;34msbin.usr-is-merged[0m
+drwxr-xr-x   2 root root 4.0K Apr  9 05:14 [01;34msnap[0m
+drwxr-xr-x   2 root root 4.0K Jan  6 20:13 [01;34msrv[0m
+dr-xr-xr-x  11 root root    0 Apr  9 05:29 [01;34msys[0m
+drwxrwxrwt  11 root root 4.0K Apr  9 05:17 [30;42mtmp[0m
+drwxr-xr-x  12 root root 4.0K Jan  6 20:13 [01;34musr[0m
+drwxr-xr-x  13 root root 4.0K Apr  9 05:14 [01;34mvar[0m
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ cd etc
+[?2004l
+[?2004h]0;prem@DESKTOP-0FTCP9B: /etc[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/etc[00m$ ls -alh
+[?2004l
+total 804K
+drwxr-xr-x 87 root root      4.0K Apr  9 05:41 [0m[01;34m.[0m
+drwxr-xr-x 22 root root      4.0K Apr  9 05:17 [01;34m..[0m
+-rw-------  1 root root         0 Jan  6 20:13 .pwd.lock
+-rw-r--r--  1 root root       837 Jan  6 20:13 [00;90m.resolv.conf.systemd-resolved.bak[0m
+-rw-r--r--  1 root root       208 Jan  6 20:13 .updated
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mPackageKit[0m
+drwxr-xr-x  7 root root      4.0K Jan  6 20:15 [01;34mX11[0m
+-rw-r--r--  1 root root      3.4K Jul  5  2023 adduser.conf
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34malternatives[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mapparmor[0m
+drwxr-xr-x  9 root root      4.0K Jan  6 20:15 [01;34mapparmor.d[0m
+drwxr-xr-x  3 root root      4.0K Jan  6 20:15 [01;34mapport[0m
+drwxr-xr-x  8 root root      4.0K Jan  6 20:15 [01;34mapt[0m
+-rw-r--r--  1 root root      2.3K Mar 31  2024 bash.bashrc
+-rw-r--r--  1 root root        45 Jan 24  2020 bash_completion
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mbash_completion.d[0m
+-rw-r--r--  1 root root       367 Aug  2  2022 bindresvport.blacklist
+drwxr-xr-x  2 root root      4.0K Apr 19  2024 [01;34mbinfmt.d[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mbyobu[0m
+drwxr-xr-x  3 root root      4.0K Jan  6 20:14 [01;34mca-certificates[0m
+-rw-r--r--  1 root root      6.2K Jan  6 20:14 ca-certificates.conf
+drwxr-xr-x  5 root root      4.0K Jan  6 20:15 [01;34mcloud[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mconsole-setup[0m
+drwx------  2 root root      4.0K Apr 19  2024 [01;34mcredstore[0m
+drwx------  2 root root      4.0K Apr 19  2024 [01;34mcredstore.encrypted[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mcron.d[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mcron.daily[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mcron.hourly[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mcron.monthly[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mcron.weekly[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mcron.yearly[0m
+-rw-r--r--  1 root root      1.2K Mar 31  2024 crontab
+drwxr-xr-x  4 root root      4.0K Jan  6 20:14 [01;34mdbus-1[0m
+drwxr-xr-x  3 root root      4.0K Jan  6 20:15 [01;34mdconf[0m
+-rw-r--r--  1 root root      2.9K Apr 12  2024 debconf.conf
+-rw-r--r--  1 root root        11 Apr 22  2024 debian_version
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mdefault[0m
+-rw-r--r--  1 root root      1.7K Jul  5  2023 deluser.conf
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mdepmod.d[0m
+drwxr-xr-x  3 root root      4.0K Jan  6 20:14 [01;34mdhcp[0m
+-rw-r--r--  1 root root      1.4K Mar 31  2024 dhcpcd.conf
+drwxr-xr-x  4 root root      4.0K Jan  6 20:14 [01;34mdpkg[0m
+-rw-r--r--  1 root root       685 Apr  8  2024 e2scrub.conf
+-rw-r--r--  1 root root       106 Jan  6 20:13 environment
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34menvironment.d[0m
+-rw-r--r--  1 root root      1.9K Oct 17  2022 ethertypes
+drwxr-xr-x  4 root root      4.0K Jan  6 20:15 [01;34mfonts[0m
+-rw-r--r--  1 root root        37 Jan  6 20:13 fstab
+-rw-r--r--  1 root root       694 Apr  8  2024 fuse.conf
+-rw-r--r--  1 root root      2.6K Jan 31  2024 gai.conf
+drwxr-xr-x  3 root root      4.0K Jan  6 20:15 [01;34mglvnd[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mgnutls[0m
+-rw-r--r--  1 root root      3.9K Aug  7  2024 gprofng.rc
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mgroff[0m
+-rw-r--r--  1 root root       771 Apr  9 05:15 group
+-rw-r--r--  1 root root       730 Apr  9 05:15 group-
+-rw-r-----  1 root shadow     656 Apr  9 05:15 gshadow
+-rw-r-----  1 root shadow     615 Apr  9 05:15 gshadow-
+drwxr-xr-x  3 root root      4.0K Jan  6 20:14 [01;34mgss[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mgtk-3.0[0m
+-rw-r--r--  1 root root        92 Apr 22  2024 host.conf
+-rw-r--r--  1 root root        16 Apr  9 05:17 hostname
+-rw-r--r--  1 root root       416 Apr  9 05:17 hosts
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34minit.d[0m
+-rw-r--r--  1 root root      1.9K Mar 31  2024 inputrc
+drwxr-xr-x  4 root root      4.0K Jan  6 20:14 [01;34miproute2[0m
+-rw-r--r--  1 root root        26 Aug 23  2024 issue
+-rw-r--r--  1 root root        19 Aug 23  2024 issue.net
+drwxr-xr-x  4 root root      4.0K Jan  6 20:14 [01;34mkernel[0m
+drwxrwxr-x  2 root landscape 4.0K Jan  6 20:15 [01;34mlandscape[0m
+-rw-r--r--  1 root root       18K Apr  9 05:17 ld.so.cache
+-rw-r--r--  1 root root        34 Aug  2  2022 ld.so.conf
+drwxr-xr-x  2 root root      4.0K Apr  9 05:13 [01;34mld.so.conf.d[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mldap[0m
+-rw-r--r--  1 root root       267 Apr 22  2024 legal
+-rw-r--r--  1 root root       191 Mar 31  2024 libaudit.conf
+-rw-r--r--  1 root root      3.0K Mar 30  2024 locale.alias
+-rw-r--r--  1 root root        13 Jan  6 20:14 locale.conf
+-rw-r--r--  1 root root      9.4K Jan  6 20:14 locale.gen
+lrwxrwxrwx  1 root root        27 Jan  6 20:14 [01;36mlocaltime[0m -> /usr/share/zoneinfo/Etc/UTC
+drwxr-xr-x  3 root root      4.0K Jan  6 20:14 [01;34mlogcheck[0m
+-rw-r--r--  1 root root       13K Feb 22  2024 login.defs
+-rw-r--r--  1 root root       586 Apr  8  2024 logrotate.conf
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mlogrotate.d[0m
+-rw-r--r--  1 root root       104 Aug 23  2024 lsb-release
+-r--r--r--  1 root root        33 Apr  9 05:13 machine-id
+-rw-r--r--  1 root root       111 Mar 31  2024 magic
+-rw-r--r--  1 root root       111 Mar 31  2024 magic.mime
+-rw-r--r--  1 root root      5.2K Apr  8  2024 manpath.config
+-rw-r--r--  1 root root       74K Jul 12  2023 mime.types
+-rw-r--r--  1 root root       744 Apr  8  2024 mke2fs.conf
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mmodprobe.d[0m
+-rw-r--r--  1 root root       212 Jan  6 20:14 modules
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mmodules-load.d[0m
+lrwxrwxrwx  1 root root        19 Jan  6 20:14 [01;36mmtab[0m -> ../proc/self/mounts
+-rw-r--r--  1 root root       12K May 23  2023 nanorc
+-rw-r--r--  1 root root       767 Mar 31  2024 netconfig
+drwxr-xr-x  2 root root      4.0K Apr 18  2024 [01;34mnetplan[0m
+drwxr-xr-x  8 root root      4.0K Jan  6 20:14 [01;34mnetworkd-dispatcher[0m
+-rw-r--r--  1 root root        91 Apr 22  2024 networks
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mnewt[0m
+-rw-r--r--  1 root root       526 Jan  6 20:14 nsswitch.conf
+drwxr-xr-x  2 root root      4.0K Jan  6 20:13 [01;34mopt[0m
+lrwxrwxrwx  1 root root        21 Aug 23  2024 [01;36mos-release[0m -> ../usr/lib/os-release
+-rw-r--r--  1 root root       552 Oct 13  2022 pam.conf
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mpam.d[0m
+-rw-r--r--  1 root root      1.4K Apr  9 05:15 passwd
+-rw-r--r--  1 root root      1.4K Apr  9 05:14 passwd-
+drwxr-xr-x  3 root root      4.0K Jan  6 20:14 [01;34mperl[0m
+drwxr-xr-x  3 root root      4.0K Jan  6 20:15 [01;34mpm[0m
+drwxr-xr-x  3 root root      4.0K Jan  6 20:15 [01;34mpolkit-1[0m
+-rw-r--r--  1 root root       582 Apr 22  2024 profile
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mprofile.d[0m
+-rw-r--r--  1 root root      3.1K Oct 17  2022 protocols
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mpython3[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mpython3.12[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mrc0.d[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mrc1.d[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mrc2.d[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mrc3.d[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mrc4.d[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mrc5.d[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mrc6.d[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mrcS.d[0m
+lrwxrwxrwx  1 root root        20 Apr  9 05:41 [01;36mresolv.conf[0m -> /mnt/wsl/resolv.conf
+lrwxrwxrwx  1 root root        13 Apr  8  2024 [01;36mrmt[0m -> [01;32m/usr/sbin/rmt[0m
+-rw-r--r--  1 root root       911 Oct 17  2022 rpc
+-rw-r--r--  1 root root      1.2K Mar 22  2024 rsyslog.conf
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mrsyslog.d[0m
+drwxr-xr-x  4 root root      4.0K Jan  6 20:14 [01;34msecurity[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:13 [01;34mselinux[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34msensors.d[0m
+-rw-r--r--  1 root root       11K Mar 31  2024 sensors3.conf
+-rw-r--r--  1 root root       13K Mar 27  2021 services
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34msgml[0m
+-rw-r-----  1 root shadow     800 Apr  9 05:15 shadow
+-rw-r-----  1 root shadow     702 Jan  6 20:15 shadow-
+-rw-r--r--  1 root root       132 Jan  6 20:15 shells
+drwxr-xr-x  2 root root      4.0K Jan  6 20:13 [01;34mskel[0m
+drwxr-xr-x  3 root root      4.0K Jan  6 20:15 [01;34mssh[0m
+drwxr-xr-x  4 root root      4.0K Jan  6 20:14 [01;34mssl[0m
+-rw-r--r--  1 root root        18 Apr  9 05:14 subgid
+-rw-r--r--  1 root root         0 Jan  6 20:13 subgid-
+-rw-r--r--  1 root root        18 Apr  9 05:14 subuid
+-rw-r--r--  1 root root         0 Jan  6 20:13 subuid-
+-rw-r--r--  1 root root      4.3K Apr  8  2024 sudo.conf
+-rw-r--r--  1 root root      9.6K Apr  8  2024 sudo_logsrvd.conf
+-r--r-----  1 root root      1.8K Jan 29  2024 sudoers
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34msudoers.d[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34msupercat[0m
+-rw-r--r--  1 root root      2.2K Mar 24  2024 sysctl.conf
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34msysctl.d[0m
+drwxr-xr-x  6 root root      4.0K Jan  6 20:14 [01;34msystemd[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:13 [01;34mterminfo[0m
+-rw-r--r--  1 root root         8 Jan  6 20:14 timezone
+drwxr-xr-x  2 root root      4.0K Apr 19  2024 [01;34mtmpfiles.d[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mubuntu-advantage[0m
+-rw-r--r--  1 root root      1.3K Jan 27  2023 ucf.conf
+drwxr-xr-x  4 root root      4.0K Jan  6 20:14 [01;34mudev[0m
+drwxr-xr-x  3 root root      4.0K Jan  6 20:16 [01;34mupdate-manager[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mupdate-motd.d[0m
+lrwxrwxrwx  1 root root        16 Jan  6 20:14 [01;36mvconsole.conf[0m -> default/keyboard
+drwxr-xr-x  2 root root      4.0K Jan  6 20:14 [01;34mvim[0m
+lrwxrwxrwx  1 root root        23 Feb 26  2024 [01;36mvtrgb[0m -> /etc/alternatives/vtrgb
+drwxr-xr-x  5 root root      4.0K Jan  6 20:15 [01;34mvulkan[0m
+-rw-r--r--  1 root root      4.9K Jun 19  2024 wgetrc
+-rw-r--r--  1 root root        20 Jan  6 20:15 wsl.conf
+-rw-r--r--  1 root root       681 Apr  8  2024 xattr.conf
+drwxr-xr-x  5 root root      4.0K Jan  6 20:15 [01;34mxdg[0m
+drwxr-xr-x  2 root root      4.0K Jan  6 20:15 [01;34mxml[0m
+-rw-r--r--  1 root root       460 Jan 20  2023 zsh_command_not_found
+[?2004h]0;prem@DESKTOP-0FTCP9B: /etc[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/etc[00m$ wc rsysconf[K[K[Klog.conf[1Plog.conf
+[?2004l
+  53  134 1213 rsyslog.conf
+[?2004h]0;prem@DESKTOP-0FTCP9B: /etc[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/etc[00m$ wc rsyslog.conf[C-rsyslog.conflrsyslog.conf rsyslog.conf
+[?2004l
+53 rsyslog.conf
+[?2004h]0;prem@DESKTOP-0FTCP9B: /etc[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/etc[00m$ wc -l rsyslog.conf[1P rsyslog.conf[1P rsyslog.conf[1Prsyslog.conf[1P rsyslog.conf[1P rsyslog.confn rsyslog.confa rsyslog.confn rsyslog.confo rsyslog.conf
+[?2004l
+[?2004h[?1049h[22;0;0t[1;26r(B[m[4l[?7h[39;49m[?1h=[?1h=[?25l[39;49m(B[m[H[2J[24;33H(B[0;1m[37m[41m[ Directory '.' is not writable ][39;49m(B[m[24;31H(B[0;1m[37m[41m[ File 'rsyslog.conf' is unwritable ][39;49m(B[m[H(B[0;7m  GNU nano 7.2                               rsyslog.conf                                        [1;96H(B[m
+[25d(B[0;7m^G(B[m Help[25;17H(B[0;7m^O(B[m Write Out    (B[0;7m^W(B[m Where Is     (B[0;7m^K(B[m Cut[25;65H(B[0;7m^T(B[m Execute[81G(B[0;7m^C(B[m Location
+[26d(B[0;7m^X(B[m Exit[26;17H(B[0;7m^R(B[m Read File    (B[0;7m^\(B[m Replace[49G(B[0;7m^U(B[m Paste[26;65H(B[0;7m^J(B[m Justify[81G(B[0;7m^/(B[m Go To Line
+[2d[36m# /etc/rsyslog.conf configuration file for rsyslog
+[3d#[4d# For more information install rsyslog-doc and see
+[5d# /usr/share/doc/rsyslog-doc/html/configuration/index.html
+[6d#[7d# Default logging rules can be found in /etc/rsyslog.d/50-default.conf
+[10d#################
+[11d#### MODULES ####
+[12d#################
+[14d[39m(B[mmodule(load="imuxsock") # provides support for local system logging
+[15d[36m#module(load="immark")  # provides --MARK-- message capability
+[17d# provides UDP syslog reception
+[18d#module(load="imudp")
+[19d#input(type="imudp" port="514")
+[21d# provides TCP syslog reception
+[22d#module(load="imtcp")
+[23d#input(type="imtcp" port="514")
+[2d[39m(B[m[?12l[?25h[?25l[24d[J[26d[?12l[?25h[26;1H[?1049l[23;0;0t
+[?1l>[?2004l[?2004h]0;prem@DESKTOP-0FTCP9B: /etc[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/etc[00m$ nano rsyslog.conf[1@wc -l[C[C[C[C[C[C[C[C[C[C[C[C[C1 rsyslog.conf1 rsyslog.conf
+[?2004l
+wc: invalid option -- '1'
+Try 'wc --help' for more information.
+[?2004h]0;prem@DESKTOP-0FTCP9B: /etc[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/etc[00m$ wc -l11 rsyslog.conf[C[1P rsyslog.conf[1P rsyslog.conf1 rsyslog.conf
+[?2004l
+wc: invalid option -- '1'
+Try 'wc --help' for more information.
+[?2004h]0;prem@DESKTOP-0FTCP9B: /etc[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/etc[00m$ wc -l1 rsyslog.conf[1P rsyslog.conf
+[?2004l
+53 rsyslog.conf
+[?2004h]0;prem@DESKTOP-0FTCP9B: /etc[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/etc[00m$ wc -l rsyslog.conf[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K-l passwd
+[?2004l
+28 passwd
+[?2004h]0;prem@DESKTOP-0FTCP9B: /etc[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/etc[00m$ du [K
+[?2004l
+8	./sgml
+8	./ldap
+28	./xml
+8	./cron.hourly
+4	./tmpfiles.d
+4	./networkd-dispatcher/routable.d
+4	./networkd-dispatcher/off.d
+4	./networkd-dispatcher/dormant.d
+4	./networkd-dispatcher/carrier.d
+4	./networkd-dispatcher/no-carrier.d
+4	./networkd-dispatcher/degraded.d
+28	./networkd-dispatcher
+40	./profile.d
+12	./logcheck/ignore.d.server
+16	./logcheck
+8	./sudoers.d
+12	./vim
+36	./update-motd.d
+12	./gtk-3.0
+8	./iproute2/rt_tables.d
+8	./iproute2/rt_protos.d
+56	./iproute2
+8	./alternatives
+4	./ca-certificates/update.d
+8	./ca-certificates
+12	./groff
+du: cannot read directory './polkit-1/rules.d': Permission denied
+4	./polkit-1/rules.d
+8	./polkit-1
+28	./modprobe.d
+8	./apport/report-ignore
+16	./apport
+4	./rc4.d
+4	./rcS.d
+du: cannot read directory './credstore.encrypted': Permission denied
+4	./credstore.encrypted
+du: cannot read directory './ssl/private': Permission denied
+4	./ssl/private
+640	./ssl/certs
+664	./ssl
+8	./landscape
+4	./vulkan/icd.d
+4	./vulkan/implicit_layer.d
+4	./vulkan/explicit_layer.d
+16	./vulkan
+52	./fonts/conf.avail
+12	./fonts/conf.d
+72	./fonts
+4	./kernel/install.d
+8	./kernel/postinst.d
+16	./kernel
+8	./update-manager/release-upgrades.d
+20	./update-manager
+40	./default
+du: cannot read directory './credstore': Permission denied
+4	./credstore
+12	./rsyslog.d
+8	./cron.monthly
+4	./dconf/db
+8	./dconf
+200	./console-setup
+56	./init.d
+48	./logrotate.d
+16	./ld.so.conf.d
+12	./dpkg/origins
+4	./dpkg/dpkg.cfg.d
+24	./dpkg
+4	./gss/mech.d
+8	./gss
+8	./xdg/Xwayland-session.d
+16	./xdg/autostart
+4	./xdg/systemd
+40	./xdg
+4	./sensors.d
+12	./cron.d
+4	./rc5.d
+12	./cron.weekly
+4	./security/limits.d
+4	./security/namespace.d
+60	./security
+8	./perl/Net
+12	./perl
+4	./modules-load.d
+8	./apparmor
+4	./cloud/clean.d
+224	./cloud/templates
+20	./cloud/cloud.cfg.d
+256	./cloud
+84	./pam.d
+4	./rc6.d
+4	./ssh/ssh_config.d
+12	./ssh
+8	./cron.yearly
+8	./terminfo
+12	./supercat
+8	./newt
+28	./cron.daily
+4	./rc3.d
+44	./sysctl.d
+8	./environment.d
+4	./binfmt.d
+8	./ubuntu-advantage
+4	./rc2.d
+8	./bash_completion.d
+8	./pm/sleep.d
+12	./pm
+4	./opt
+4	./X11/xorg.conf.d
+56	./X11/Xsession.d
+8	./X11/Xresources
+8	./X11/Xreset.d
+4	./X11/xkb
+120	./X11
+4	./rc0.d
+12	./byobu
+12	./PackageKit
+4	./netplan
+4	./glvnd/egl_vendor.d
+8	./glvnd
+8	./dhcp/dhclient-exit-hooks.d
+12	./dhcp
+4	./udev/rules.d
+4	./udev/hwdb.d
+20	./udev
+4	./systemd/user/timers.target.wants
+4	./systemd/user/graphical-session-pre.target.wants
+4	./systemd/user/sockets.target.wants
+16	./systemd/user
+4	./systemd/system/cloud-init.target.wants
+8	./systemd/system/multi-user.target.wants
+4	./systemd/system/final.target.wants
+4	./systemd/system/cloud-config.target.wants
+4	./systemd/system/sysinit.target.wants
+4	./systemd/system/timers.target.wants
+4	./systemd/system/getty.target.wants
+4	./systemd/system/cloud-final.service.wants
+4	./systemd/system/sockets.target.wants
+4	./systemd/system/paths.target.wants
+48	./systemd/system
+4	./systemd/network
+4	./systemd/system-generators
+112	./systemd
+4	./rc1.d
+8	./gnutls
+8	./depmod.d
+12	./apt/trusted.gpg.d
+4	./apt/auth.conf.d
+12	./apt/preferences.d
+8	./apt/sources.list.d
+48	./apt/apt.conf.d
+4	./apt/keyrings
+96	./apt
+8	./dbus-1/system.d
+4	./dbus-1/session.d
+16	./dbus-1
+8	./python3.12
+20	./apparmor.d/abi
+8	./apparmor.d/local
+4	./apparmor.d/disable
+24	./apparmor.d/abstractions/apparmor_api
+48	./apparmor.d/abstractions/ubuntu-browsers.d
+536	./apparmor.d/abstractions
+4	./apparmor.d/force-complain
+8	./apparmor.d/rsyslog.d
+8	./apparmor.d/tunables/multiarch.d
+12	./apparmor.d/tunables/home.d
+8	./apparmor.d/tunables/xdg-user-dirs.d
+88	./apparmor.d/tunables
+1112	./apparmor.d
+8	./selinux
+16	./skel
+8	./python3
+4296	.
+[?2004h]0;prem@DESKTOP-0FTCP9B: /etc[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/etc[00m$ du -sh
+[?2004l
+du: cannot read directory './polkit-1/rules.d': Permission denied
+du: cannot read directory './credstore.encrypted': Permission denied
+du: cannot read directory './ssl/private': Permission denied
+du: cannot read directory './credstore': Permission denied
+4.2M	.
+[?2004h]0;prem@DESKTOP-0FTCP9B: /etc[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/etc[00m$ cd ..
+[?2004l
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ cd ..du -sh
+[?2004l
+du: cannot read directory './var/lib/private': Permission denied
+du: cannot read directory './var/lib/polkit-1': Permission denied
+du: cannot read directory './var/lib/snapd/cookie': Permission denied
+du: cannot read directory './var/lib/snapd/void': Permission denied
+du: cannot read directory './var/lib/apt/lists/partial': Permission denied
+du: cannot read directory './var/tmp/systemd-private-9dec233d2c274ce3a518a2fa20e2173b-systemd-timesyncd.service-5ifPnT': Permission denied
+du: cannot read directory './var/tmp/systemd-private-9dec233d2c274ce3a518a2fa20e2173b-systemd-logind.service-eRGath': Permission denied
+du: cannot read directory './var/tmp/systemd-private-9dec233d2c274ce3a518a2fa20e2173b-systemd-resolved.service-2WKLAu': Permission denied
+du: cannot read directory './var/tmp/systemd-private-9dec233d2c274ce3a518a2fa20e2173b-wsl-pro.service-XEUM5o': Permission denied
+du: cannot read directory './var/cache/private': Permission denied
+du: cannot read directory './var/cache/ldconfig': Permission denied
+du: cannot read directory './var/cache/apt/archives/partial': Permission denied
+du: cannot read directory './var/spool/cron/crontabs': Permission denied
+du: cannot read directory './var/spool/rsyslog': Permission denied
+du: cannot read directory './var/log/private': Permission denied
+du: cannot read directory './run/sudo': Permission denied
+du: cannot read directory './run/systemd/propagate/wsl-pro.service': Permission denied
+du: cannot read directory './run/systemd/propagate/systemd-logind.service': Permission denied
+du: cannot read directory './run/systemd/propagate/systemd-resolved.service': Permission denied
+du: cannot read directory './run/systemd/propagate/systemd-timesyncd.service': Permission denied
+du: cannot read directory './run/systemd/propagate/systemd-udevd.service': Permission denied
+du: cannot read directory './run/systemd/inaccessible/dir': Permission denied
+du: cannot read directory './run/user/1000/systemd/inaccessible/dir': Permission denied
+du: cannot read directory './sys/kernel/tracing': Permission denied
+du: cannot read directory './sys/kernel/debug': Permission denied
+du: cannot read directory './tmp/snap-private-tmp': Permission denied
+du: cannot read directory './tmp/systemd-private-9dec233d2c274ce3a518a2fa20e2173b-systemd-logind.service-nslaJT': Permission denied
+du: cannot read directory './tmp/systemd-private-9dec233d2c274ce3a518a2fa20e2173b-wsl-pro.service-cIe4Mu': Permission denied
+du: cannot read directory './tmp/systemd-private-9dec233d2c274ce3a518a2fa20e2173b-systemd-resolved.service-7JFX8S': Permission denied
+du: cannot read directory './tmp/systemd-private-9dec233d2c274ce3a518a2fa20e2173b-systemd-timesyncd.service-o0I9eQ': Permission denied
+du: cannot read directory './root': Permission denied
+du: cannot read directory './etc/polkit-1/rules.d': Permission denied
+du: cannot read directory './etc/credstore.encrypted': Permission denied
+du: cannot read directory './etc/ssl/private': Permission denied
+du: cannot read directory './etc/credstore': Permission denied
+du: cannot read directory './lost+found': Permission denied
+du: cannot read directory './proc/tty/driver': Permission denied
+du: cannot read directory './proc/1/task/1/fd': Permission denied
+du: cannot read directory './proc/1/task/1/fdinfo': Permission denied
+du: cannot read directory './proc/1/task/1/ns': Permission denied
+du: cannot read directory './proc/1/fd': Permission denied
+du: cannot read directory './proc/1/map_files': Permission denied
+du: cannot read directory './proc/1/fdinfo': Permission denied
+du: cannot read directory './proc/1/ns': Permission denied
+du: cannot read directory './proc/2/task/2/fd': Permission denied
+du: cannot read directory './proc/2/task/2/fdinfo': Permission denied
+du: cannot read directory './proc/2/task/2/ns': Permission denied
+du: cannot read directory './proc/2/task/8/fd': Permission denied
+du: cannot read directory './proc/2/task/8/fdinfo': Permission denied
+du: cannot read directory './proc/2/task/8/ns': Permission denied
+du: cannot read directory './proc/2/fd': Permission denied
+du: cannot read directory './proc/2/map_files': Permission denied
+du: cannot read directory './proc/2/fdinfo': Permission denied
+du: cannot read directory './proc/2/ns': Permission denied
+du: cannot read directory './proc/6/task/6/fd': Permission denied
+du: cannot read directory './proc/6/task/6/fdinfo': Permission denied
+du: cannot read directory './proc/6/task/6/ns': Permission denied
+du: cannot read directory './proc/6/task/7/fd': Permission denied
+du: cannot read directory './proc/6/task/7/fdinfo': Permission denied
+du: cannot read directory './proc/6/task/7/ns': Permission denied
+du: cannot read directory './proc/6/fd': Permission denied
+du: cannot read directory './proc/6/map_files': Permission denied
+du: cannot read directory './proc/6/fdinfo': Permission denied
+du: cannot read directory './proc/6/ns': Permission denied
+du: cannot read directory './proc/63/task/63/fd': Permission denied
+du: cannot read directory './proc/63/task/63/fdinfo': Permission denied
+du: cannot read directory './proc/63/task/63/ns': Permission denied
+du: cannot read directory './proc/63/fd': Permission denied
+du: cannot read directory './proc/63/map_files': Permission denied
+du: cannot read directory './proc/63/fdinfo': Permission denied
+du: cannot read directory './proc/63/ns': Permission denied
+du: cannot read directory './proc/105/task/105/fd': Permission denied
+du: cannot read directory './proc/105/task/105/fdinfo': Permission denied
+du: cannot read directory './proc/105/task/105/ns': Permission denied
+du: cannot read directory './proc/105/fd': Permission denied
+du: cannot read directory './proc/105/map_files': Permission denied
+du: cannot read directory './proc/105/fdinfo': Permission denied
+du: cannot read directory './proc/105/ns': Permission denied
+du: cannot read directory './proc/132/task/132/fd': Permission denied
+du: cannot read directory './proc/132/task/132/fdinfo': Permission denied
+du: cannot read directory './proc/132/task/132/ns': Permission denied
+du: cannot read directory './proc/132/fd': Permission denied
+du: cannot read directory './proc/132/map_files': Permission denied
+du: cannot read directory './proc/132/fdinfo': Permission denied
+du: cannot read directory './proc/132/ns': Permission denied
+du: cannot read directory './proc/133/task/133/fd': Permission denied
+du: cannot read directory './proc/133/task/133/fdinfo': Permission denied
+du: cannot read directory './proc/133/task/133/ns': Permission denied
+du: cannot read directory './proc/133/task/153/fd': Permission denied
+du: cannot read directory './proc/133/task/153/fdinfo': Permission denied
+du: cannot read directory './proc/133/task/153/ns': Permission denied
+du: cannot read directory './proc/133/fd': Permission denied
+du: cannot read directory './proc/133/map_files': Permission denied
+du: cannot read directory './proc/133/fdinfo': Permission denied
+du: cannot read directory './proc/133/ns': Permission denied
+du: cannot read directory './proc/158/task/158/fd': Permission denied
+du: cannot read directory './proc/158/task/158/fdinfo': Permission denied
+du: cannot read directory './proc/158/task/158/ns': Permission denied
+du: cannot read directory './proc/158/fd': Permission denied
+du: cannot read directory './proc/158/map_files': Permission denied
+du: cannot read directory './proc/158/fdinfo': Permission denied
+du: cannot read directory './proc/158/ns': Permission denied
+du: cannot read directory './proc/159/task/159/fd': Permission denied
+du: cannot read directory './proc/159/task/159/fdinfo': Permission denied
+du: cannot read directory './proc/159/task/159/ns': Permission denied
+du: cannot read directory './proc/159/fd': Permission denied
+du: cannot read directory './proc/159/map_files': Permission denied
+du: cannot read directory './proc/159/fdinfo': Permission denied
+du: cannot read directory './proc/159/ns': Permission denied
+du: cannot read directory './proc/166/task/166/fd': Permission denied
+du: cannot read directory './proc/166/task/166/fdinfo': Permission denied
+du: cannot read directory './proc/166/task/166/ns': Permission denied
+du: cannot read directory './proc/166/fd': Permission denied
+du: cannot read directory './proc/166/map_files': Permission denied
+du: cannot read directory './proc/166/fdinfo': Permission denied
+du: cannot read directory './proc/166/ns': Permission denied
+du: cannot read directory './proc/169/task/169/fd': Permission denied
+du: cannot read directory './proc/169/task/169/fdinfo': Permission denied
+du: cannot read directory './proc/169/task/169/ns': Permission denied
+du: cannot read directory './proc/169/task/202/fd': Permission denied
+du: cannot read directory './proc/169/task/202/fdinfo': Permission denied
+du: cannot read directory './proc/169/task/202/ns': Permission denied
+du: cannot read directory './proc/169/task/203/fd': Permission denied
+du: cannot read directory './proc/169/task/203/fdinfo': Permission denied
+du: cannot read directory './proc/169/task/203/ns': Permission denied
+du: cannot read directory './proc/169/task/204/fd': Permission denied
+du: cannot read directory './proc/169/task/204/fdinfo': Permission denied
+du: cannot read directory './proc/169/task/204/ns': Permission denied
+du: cannot read directory './proc/169/task/205/fd': Permission denied
+du: cannot read directory './proc/169/task/205/fdinfo': Permission denied
+du: cannot read directory './proc/169/task/205/ns': Permission denied
+du: cannot read directory './proc/169/task/213/fd': Permission denied
+du: cannot read directory './proc/169/task/213/fdinfo': Permission denied
+du: cannot read directory './proc/169/task/213/ns': Permission denied
+du: cannot read directory './proc/169/fd': Permission denied
+du: cannot read directory './proc/169/map_files': Permission denied
+du: cannot read directory './proc/169/fdinfo': Permission denied
+du: cannot read directory './proc/169/ns': Permission denied
+du: cannot read directory './proc/186/task/186/fd': Permission denied
+du: cannot read directory './proc/186/task/186/fdinfo': Permission denied
+du: cannot read directory './proc/186/task/186/ns': Permission denied
+du: cannot read directory './proc/186/fd': Permission denied
+du: cannot read directory './proc/186/map_files': Permission denied
+du: cannot read directory './proc/186/fdinfo': Permission denied
+du: cannot read directory './proc/186/ns': Permission denied
+du: cannot read directory './proc/190/task/190/fd': Permission denied
+du: cannot read directory './proc/190/task/190/fdinfo': Permission denied
+du: cannot read directory './proc/190/task/190/ns': Permission denied
+du: cannot read directory './proc/190/task/198/fd': Permission denied
+du: cannot read directory './proc/190/task/198/fdinfo': Permission denied
+du: cannot read directory './proc/190/task/198/ns': Permission denied
+du: cannot read directory './proc/190/task/199/fd': Permission denied
+du: cannot read directory './proc/190/task/199/fdinfo': Permission denied
+du: cannot read directory './proc/190/task/199/ns': Permission denied
+du: cannot read directory './proc/190/task/200/fd': Permission denied
+du: cannot read directory './proc/190/task/200/fdinfo': Permission denied
+du: cannot read directory './proc/190/task/200/ns': Permission denied
+du: cannot read directory './proc/190/fd': Permission denied
+du: cannot read directory './proc/190/map_files': Permission denied
+du: cannot read directory './proc/190/fdinfo': Permission denied
+du: cannot read directory './proc/190/ns': Permission denied
+du: cannot read directory './proc/193/task/193/fd': Permission denied
+du: cannot read directory './proc/193/task/193/fdinfo': Permission denied
+du: cannot read directory './proc/193/task/193/ns': Permission denied
+du: cannot read directory './proc/193/fd': Permission denied
+du: cannot read directory './proc/193/map_files': Permission denied
+du: cannot read directory './proc/193/fdinfo': Permission denied
+du: cannot read directory './proc/193/ns': Permission denied
+du: cannot read directory './proc/211/task/211/fd': Permission denied
+du: cannot read directory './proc/211/task/211/fdinfo': Permission denied
+du: cannot read directory './proc/211/task/211/ns': Permission denied
+du: cannot read directory './proc/211/task/248/fd': Permission denied
+du: cannot read directory './proc/211/task/248/fdinfo': Permission denied
+du: cannot read directory './proc/211/task/248/ns': Permission denied
+du: cannot read directory './proc/211/fd': Permission denied
+du: cannot read directory './proc/211/map_files': Permission denied
+du: cannot read directory './proc/211/fdinfo': Permission denied
+du: cannot read directory './proc/211/ns': Permission denied
+du: cannot read directory './proc/297/task/297/fd': Permission denied
+du: cannot read directory './proc/297/task/297/fdinfo': Permission denied
+du: cannot read directory './proc/297/task/297/ns': Permission denied
+du: cannot read directory './proc/297/fd': Permission denied
+du: cannot read directory './proc/297/map_files': Permission denied
+du: cannot read directory './proc/297/fdinfo': Permission denied
+du: cannot read directory './proc/297/ns': Permission denied
+du: cannot read directory './proc/298/task/298/fd': Permission denied
+du: cannot read directory './proc/298/task/298/fdinfo': Permission denied
+du: cannot read directory './proc/298/task/298/ns': Permission denied
+du: cannot read directory './proc/298/fd': Permission denied
+du: cannot read directory './proc/298/map_files': Permission denied
+du: cannot read directory './proc/298/fdinfo': Permission denied
+du: cannot read directory './proc/298/ns': Permission denied
+du: cannot read directory './proc/304/task/304/fd': Permission denied
+du: cannot read directory './proc/304/task/304/fdinfo': Permission denied
+du: cannot read directory './proc/304/task/304/ns': Permission denied
+du: cannot read directory './proc/304/fd': Permission denied
+du: cannot read directory './proc/304/map_files': Permission denied
+du: cannot read directory './proc/304/fdinfo': Permission denied
+du: cannot read directory './proc/304/ns': Permission denied
+du: cannot read directory './proc/361/task/361/fdinfo': Permission denied
+du: cannot read directory './proc/361/map_files': Permission denied
+du: cannot read directory './proc/361/fdinfo': Permission denied
+du: cannot read directory './proc/362/task/362/fd': Permission denied
+du: cannot read directory './proc/362/task/362/fdinfo': Permission denied
+du: cannot read directory './proc/362/task/362/ns': Permission denied
+du: cannot read directory './proc/362/fd': Permission denied
+du: cannot read directory './proc/362/map_files': Permission denied
+du: cannot read directory './proc/362/fdinfo': Permission denied
+du: cannot read directory './proc/362/ns': Permission denied
+du: cannot access './proc/716/task/716/fd/3': No such file or directory
+du: cannot access './proc/716/task/716/fdinfo/3': No such file or directory
+du: cannot access './proc/716/fd/4': No such file or directory
+du: cannot access './proc/716/fdinfo/4': No such file or directory
+du: cannot read directory './mnt/wslg/run/user/1000/systemd/inaccessible/dir': Permission denied
+du: cannot read directory './mnt/c/$Recycle.Bin/S-1-5-18': Permission denied
+du: cannot access './mnt/c/DumpStack.log.tmp': Permission denied
+du: cannot access './mnt/c/hiberfil.sys': Permission denied
+du: cannot access './mnt/c/pagefile.sys': Permission denied
+du: cannot read directory './mnt/c/PerfLogs': Permission denied
+^C
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ su
+[?2004l
+Password: 
+su: Authentication failure
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ sudo du -sh
+[?2004l
+[sudo] password for prem: 
+du: WARNING: Circular directory structure.
+This almost certainly means that you have a corrupted file system.
+NOTIFY YOUR SYSTEM MANAGER.
+The following directory is part of the cycle:
+  ./sys/kernel/debug/device_component
+
+du: cannot access './proc/721/task/721/fd/3': No such file or directory
+du: cannot access './proc/721/task/721/fdinfo/3': No such file or directory
+du: cannot access './proc/721/fd/4': No such file or directory
+du: cannot access './proc/721/fdinfo/4': No such file or directory
+du: cannot read directory './mnt/c/$Recycle.Bin/S-1-5-18': Permission denied
+du: cannot access './mnt/c/DumpStack.log.tmp': Permission denied
+du: cannot access './mnt/c/hiberfil.sys': Permission denied
+du: cannot access './mnt/c/pagefile.sys': Permission denied
+du: cannot read directory './mnt/c/PerfLogs': Permission denied
+^C
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ df -h
+[?2004l
+Filesystem      Size  Used Avail Use% Mounted on
+none            937M     0  937M   0% /usr/lib/modules/5.15.167.4-microsoft-standard-WSL2
+none            937M  4.0K  937M   1% /mnt/wsl
+drivers         116G   94G   23G  81% /usr/lib/wsl/drivers
+/dev/sdc       1007G  1.2G  955G   1% /
+none            937M   76K  937M   1% /mnt/wslg
+none            937M     0  937M   0% /usr/lib/wsl/lib
+rootfs          934M  2.2M  932M   1% /init
+none            937M  468K  937M   1% /run
+none            937M     0  937M   0% /run/lock
+none            937M     0  937M   0% /run/shm
+tmpfs           4.0M     0  4.0M   0% /sys/fs/cgroup
+none            937M   76K  937M   1% /mnt/wslg/versions.txt
+none            937M   76K  937M   1% /mnt/wslg/doc
+C:\             116G   94G   23G  81% /mnt/c
+tmpfs           188M   16K  188M   1% /run/user/1000
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ df -h
+[?2004l
+Filesystem      Size  Used Avail Use% Mounted on
+none            937M     0  937M   0% /usr/lib/modules/5.15.167.4-microsoft-standard-WSL2
+none            937M  4.0K  937M   1% /mnt/wsl
+drivers         116G   94G   23G  81% /usr/lib/wsl/drivers
+/dev/sdc       1007G  1.2G  955G   1% /
+none            937M   76K  937M   1% /mnt/wslg
+none            937M     0  937M   0% /usr/lib/wsl/lib
+rootfs          934M  2.2M  932M   1% /init
+none            937M  468K  937M   1% /run
+none            937M     0  937M   0% /run/lock
+none            937M     0  937M   0% /run/shm
+tmpfs           4.0M     0  4.0M   0% /sys/fs/cgroup
+none            937M   76K  937M   1% /mnt/wslg/versions.txt
+none            937M   76K  937M   1% /mnt/wslg/doc
+C:\             116G   94G   23G  81% /mnt/c
+tmpfs           188M   16K  188M   1% /run/user/1000
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ locate rsys.conf[K[K[K[K[Klog.conf
+[?2004l
+Command 'locate' not found, did you mean:
+  command 'locale' from deb libc-bin (2.39-0ubuntu8.3)
+Try: sudo apt install <deb name>
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ sudo [7msudo apt-get install mlocate[27m[1Psudo apt-get install mlocate[1P[1P[1P[1P[1P
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+
+E: Unable to locate package mlocate
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ stat /etc/rys[K[Ksyslog.conf
+[?2004l
+  File: /etc/rsyslog.conf
+  Size: 1213      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,32	Inode: 895         Links: 1
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2025-04-09 05:14:03.992606163 +0000
+Modify: 2024-03-22 02:28:54.000000000 +0000
+Change: 2025-04-09 05:13:00.387882203 +0000
+ Birth: 2025-04-09 05:13:00.387882203 +0000
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ stat /etc/rsyslog.conf[K[K[K[K[K[K[K[K[K[K[K[Kpasswd
+[?2004l
+  File: /etc/passwd
+  Size: 1422      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,32	Inode: 49329       Links: 1
+Access: (0644/-rw-r--r--)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2025-04-09 05:15:00.964880449 +0000
+Modify: 2025-04-09 05:15:00.944905067 +0000
+Change: 2025-04-09 05:15:00.954892758 +0000
+ Birth: 2025-04-09 05:15:00.944905067 +0000
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ stat /etc
+[?2004l
+  File: /etc
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,32	Inode: 16386       Links: 87
+Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2025-04-09 06:03:54.787905285 +0000
+Modify: 2025-04-09 05:41:16.638603293 +0000
+Change: 2025-04-09 05:41:16.638603293 +0000
+ Birth: 2025-04-09 05:13:00.137882210 +0000
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ stat /etc[K[K[Khome
+[?2004l
+  File: /home
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,32	Inode: 24577       Links: 3
+Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2025-04-09 05:17:40.739177299 +0000
+Modify: 2025-04-09 05:14:55.053733653 +0000
+Change: 2025-04-09 05:14:55.053733653 +0000
+ Birth: 2025-04-09 05:13:00.547882198 +0000
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ stat /home[K[K[K[K[K[K
+[?2004l
+stat: missing operand
+Try 'stat --help' for more information.
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ stat /
+[?2004l
+  File: /
+  Size: 4096      	Blocks: 8          IO Block: 4096   directory
+Device: 8,32	Inode: 2           Links: 22
+Access: (0755/drwxr-xr-x)  Uid: (    0/    root)   Gid: (    0/    root)
+Access: 2025-04-09 05:17:18.019239142 +0000
+Modify: 2025-04-09 05:17:17.009239174 +0000
+Change: 2025-04-09 05:17:17.009239174 +0000
+ Birth: 2025-04-09 05:12:59.000000000 +0000
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ [7msudo apt install plocate[27msudo apt install plocate
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+
+[1;31mE: [0mUnable to locate package plocate[0m
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ sudo apt install plocate[1Plocateslocate
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+
+[1;31mE: [0mUnable to locate package slocate[0m
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ sudo apt install slocate[1Plocate
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+
+[1;31mE: [0mUnable to locate package locate[0m
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ [7msudo apt-get install mlocate[27m
+[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Csudo apt-get install mlocate
+[?2004l
+
+Reading package lists... 0%
+
+Reading package lists... 100%
+
+Reading package lists... Done
+
+
+Building dependency tree... 0%
+
+Building dependency tree... 0%
+
+Building dependency tree... 50%
+
+Building dependency tree... 50%
+
+Building dependency tree... Done
+
+
+Reading state information... 0% 
+
+Reading state information... 0%
+
+Reading state information... Done
+
+E: Unable to locate package mlocate
+[?2004h]0;prem@DESKTOP-0FTCP9B: /[01;32mprem@DESKTOP-0FTCP9B[00m:[01;34m/[00m$ exit
+[?2004l
+exit
+
+Script done on 2025-04-09 06:37:51+00:00 [COMMAND_EXIT_CODE="100"]
 
