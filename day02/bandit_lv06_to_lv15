@@ -1,0 +1,26 @@
+install ssh on wsl and connected to bandit6 using wsl, no more need of ssh client on windows.
+these are conditins for level 7 password
+owned by user bandit7
+owned by group bandit6
+33 bytes in size
+
+need to research how to get ownership details.
+used find / -type f to search for files
+added -user bandit7 -group bandit6 for the ownership 
+added -size 33c for size
+
+level 7 - morbNTDkSW6jIlUc0ymOdMaLnOlFVAaj
+
+The password for the next level is stored in the file data.txt next to the word millionth
+used grep millionth data.txt to get the line containing millionth word
+
+level 8 - dfwvzFQi4mU0wfNbFOe9RoWskMLg7eEc
+
+The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+
+used uniq along with sort 
+command used - sort data.txt | uniq -u
+
+level 9 - 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
+
+

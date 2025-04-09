@@ -1,8 +1,0 @@
-install ssh on wsl and connected to bandit6 using wsl, no more need of ssh client on windows.
-these are conditins for level 7 password
-owned by user bandit7
-owned by group bandit6
-33 bytes in size
-
-need to research how to get ownership details.
-
