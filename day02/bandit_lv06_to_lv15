@@ -23,4 +23,29 @@ command used - sort data.txt | uniq -u
 
 level 9 - 4CKMh1JI91bUIZZPXDqGanal4xvAg0JM
 
+The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
+used strings to sepaarate human readable
+strings data.txt | grep ====
+
+level 10 - FGUW5ilLVJrxX9kMYMmlN4MgbpfMiqey
+
+password was encoded in base64. used base64 -d to decode
+cat data.txt | base64 -d
+
+level 11 - dtR173fZKb0RRsDFSGsg2RWnpNVj3qRr
+
+the password was ion data.txt using a 13 letter ceasar shift on A-Z and a-z.
+
+cat data.txt | tr A-Za-z N-ZA-Mn-za-m
+level 12 - 7x16WNeHIi5YkIhWsfFIqoognUTyj9Q4
+
+password was repeatedly compressed and converted to hex dump.
+had to reverse the hexdump using xxd -d filename.
+then used file filename to get the type pf file. then used approprite decompression tool until i get ascii file.
+gzip file -d for gz files
+bizp2 file -d for bz files
+tar -xf file for tar files
+
+level 13 - FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
+
 
