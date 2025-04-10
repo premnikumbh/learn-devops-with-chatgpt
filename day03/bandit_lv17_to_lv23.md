@@ -69,14 +69,35 @@ level21  | user - bandit20 | password - 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
 Hint for password of bandit21
 There is a setuid binary in the homedirectory that does the following: it makes a connection to localhost on the port you specify as a commandline argument. It then reads a line of text from the connection and compares it to the password in the previous level (bandit20). If the password is correct, it will transmit the password for the next level (bandit21).
 
+This one was tricky.
+what i learnt was that i can set up connection from one instance to another.
+so i set cat /etc/bandit_pass/bandit20 | nc -l -p 1234 on one session to connect with this user.
+executed binary on another session using ./suconnect.
+then received password on first session terminal
 
-level22  | user - bandit21 | password - 
+level22  | user - bandit21 | password - EeoULMCra2q0dSkYj561DX7s1CpBuOBt
 
 Hint for password of bandit22
+A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
 
-level23  | user - bandit22 | password - 
+used ls -al ../../etc/cron.d/ to display files. used cat cronjob_bandit22 to display the script name and location.
+used cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv to get the password tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q.
+
+level23  | user - bandit22 | password - tRae0UfB9v0UzbCdn9cY0gQnds9GF58Q
 
 Hint for password of bandit23
+A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
 
-level24  | user - bandit23 | password - 
+used ls -al ../../etc/cron.d/ to display files. used cat cronjob_bandit23 to display the script name and location.
+this was the output
+myname=$(whoami)
+mytarget=$(echo I am user $myname | md5sum | cut -d ' ' -f 1)
+
+echo "Copying passwordfile /etc/bandit_pass/$myname to /tmp/$mytarget"
+
+cat /etc/bandit_pass/$myname > /tmp/$mytarget
+myname = bandit23. using this, got the name of file. mytarget = echo I am user bandit23 | md5sum | cut -d ' ' -f 1
+used cat /tmp/8ca319486bfbbc3663ea0fbe81326349 to get the password 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga.
+
+level24  | user - bandit23 | password - 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga 
 
