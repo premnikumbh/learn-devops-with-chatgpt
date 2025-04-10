@@ -1,6 +1,9 @@
-level24  | user - bandit23 | password - 
+level24  | user - bandit23 | password - 0Zf11ioIjMVN551jX3CmStKLYqjk54Ga
 
 Hint for password of bandit24
+A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
+NOTE: This level requires you to create your own first shell-script. This is a very big step and you should be proud of yourself when you beat this level!
+NOTE 2: Keep in mind that your shell script is removed once executed, so you may want to keep a copy around…
 
 level25  | user - bandit24 | password - 
 
@@ -22,3 +25,24 @@ level29  | user - bandit28 | password -
 
 Hint for password of bandit29
 
+level30  | user - bandit29 | password - 
+
+Hint for password of bandit30
+
+level31  | user - bandit30 | password - 
+
+Hint for password of bandit31
+
+level32  | user - bandit31 | password - 
+
+Hint for password of bandit32
+
+level33  | user - bandit32 | password - 
+
+Hint for password of bandit33
+
+level34  | user - bandit33 | password - 
+
+Hint for password of bandit34
+
+level--  | user - bandit34 | password - 
