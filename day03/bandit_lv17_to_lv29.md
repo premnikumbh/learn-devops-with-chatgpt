@@ -43,18 +43,29 @@ There are 2 files in the homedirectory: passwords.old and passwords.new. The pas
 
 NOTE: if you have solved this level and see ‘Byebye!’ when trying to log into bandit18, this is related to the next level, bandit19
 
-level 19 | user - bandit18 | password - 
+used diff passwords.new passwords.old
+got the line which is changed between new and old.
+
+
+level 19 | user - bandit18 | password - x2gLTTjFwMOhQ8oWNbMN362QKxfRqGlO
 
 Hint for password of bandit19
+The password for the next level is stored in a file readme in the homedirectory. Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.
 
+opened a bash termonal using
+ssh bandit18@bandit.labs.overthewire.org -p 2220 /bin/bash
 
+opened the readme file using cat readme
 
-
-level20 | user - bandit19 | password - 
+level20 | user - bandit19 | password - cGWpMaKXVwDUNgPAVJbWYuGHVn9zl3j8
 
 Hint for password of bandit20
+To gain access to the next level, you should use the setuid binary in the homedirectory. Execute it without arguments to find out how to use it. The password for this level can be found in the usual place (/etc/bandit_pass), after you have used the setuid binary.
 
-level21  | user - bandit20 | password - 
+./bandit20-do cat /etc/bandit_pass/bandit20
+
+level21  | user - bandit20 | password - 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
+
 
 Hint for password of bandit21
 
