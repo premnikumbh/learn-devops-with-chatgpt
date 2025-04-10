@@ -66,8 +66,9 @@ To gain access to the next level, you should use the setuid binary in the homedi
 
 level21  | user - bandit20 | password - 0qXahG8ZjOVMN9Ghs7iOWsCfZyXOUbYO
 
-
 Hint for password of bandit21
+There is a setuid binary in the homedirectory that does the following: it makes a connection to localhost on the port you specify as a commandline argument. It then reads a line of text from the connection and compares it to the password in the previous level (bandit20). If the password is correct, it will transmit the password for the next level (bandit21).
+
 
 level22  | user - bandit21 | password - 
 
@@ -77,4 +78,5 @@ level23  | user - bandit22 | password -
 
 Hint for password of bandit23
 
+level24  | user - bandit23 | password - 
 
