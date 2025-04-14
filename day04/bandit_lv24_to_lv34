@@ -27,6 +27,7 @@ done
 
 cat possibilities.txt | nc localhost 30002 > result.txt
 
+used uniq result.txt -u to get uniq result line.
 
 level26  | user - bandit25 | password - iCi86ttT4KSNe1armKiwbQNmB3YJP3q4
 Hint for password of bandit26
