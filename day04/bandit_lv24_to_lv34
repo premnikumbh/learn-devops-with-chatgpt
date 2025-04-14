@@ -4,8 +4,15 @@ Hint for password of bandit24
 A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
 NOTE: This level requires you to create your own first shell-script. This is a very big step and you should be proud of yourself when you beat this level!
 NOTE 2: Keep in mind that your shell script is removed once executed, so you may want to keep a copy around…
+looed at the shell script in etc/cron.d. it pointed to /usr/bin/cronjob_bandit24.sh. opened the script. it was executing all scripts in folder /var/spool/$myname/foo. myname was user24.
+created a tmp dir using mktemp -d for my work.
+creaated a script to dump password from etc/bandit_pass/bandit24 to temp directory.
+#!/bin/bash
+cat /etc/bandit_pass/bandit24 > /tmp/tmp.ljEyl6kv1M/password
+copied the script file to /var/spool/$myname/foo. got my password in a minute.
 
-level25  | user - bandit24 | password - 
+
+level25  | user - bandit24 | password - gb8KRRCsshuZXI0tUuR6ypOFjiZbf3G8
 
 Hint for password of bandit25
 
