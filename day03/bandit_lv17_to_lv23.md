@@ -59,6 +59,7 @@ The password for the next level is stored in a file readme in the homedirectory.
 
 opened a bash termonal using
 ssh bandit18@bandit.labs.overthewire.org -p 2220 /bin/bash
+ssh bandit18@bandit.labs.overthewire.org -p 2220 bash -l also works
 
 opened the readme file using cat readme
 
