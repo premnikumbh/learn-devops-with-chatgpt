@@ -49,6 +49,9 @@ tar -xf file for tar files
 level 13 - FO5dwFsc0cbaIiH0h8J2eUks2vdTDwAn
 
 password for level 14 was on only accesible by user 14. private key for login was given. 
+copied the sshkey to local pc using 
+scp -P 2220 bandit13@bandit.labs.overthewire.org:sshkey.private .
+then loogedd onto user 14 using the by using following command
 ssh -i sshkey.private bandit14@bandit.labs.overthewire.org -p 2220
 
 level 14 - MU4VWeTyJk8ROof1qqmcBPaLh7lDCPvS
