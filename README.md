@@ -1,8 +1,8 @@
-Eat, Sleep, Linux → Git → DevOps → Repeat
+# Eat, Sleep, Linux → Git → DevOps → Repeat
 
-Mission: Job Ready DevOps Engineer in 45 Days
+## Mission: Job Ready DevOps Engineer in 45 Days
 
-Strategy:
+## Strategy:
 # 🚀 DevOps Monk Mode - 45 Day Learning Plan
 
 Welcome to the **Hardcore DevOps Journey**. This plan is divided into 7 focused phases. Each phase includes daily hands-on execution tasks with clear deliverables.
