@@ -1,4 +1,4 @@
-# 🧘‍♂️ DevOps Monk Mode - 45 0 Day Challenge
+# 🧘‍♂️ DevOps Monk Mode - 45 Day Challenge
 
 Welcome to the **Eat, Sleep, Linux → Git → DevOps → Repeat** mission.
 
@@ -17,7 +17,8 @@ This is a hardcore, structured DevOps learning journey designed to take you from
 | 5     | Docker & Containers | 6 Days |
 | 6     | Kubernetes | 5 Days |
 | 7     | Terraform & Infrastructure as Code (IaC) | 5 Days |
-| 8     | Resume, Projects, Mock Interviews | 5 Days |
+| 8     | Multi-Cloud Mastery (AWS + GCP + Azure) | 5 Days |
+| 9     | Resume, Projects, Mock Interviews | 5 Days |
 
 ---
 
@@ -25,13 +26,11 @@ This is a hardcore, structured DevOps learning journey designed to take you from
 
 | Day | Topics | Execution |
 |-----|--------|-----------|
-| 1   | Navigation, File Handling | `ls`, `pwd`, `cd`, `mkdir`, `touch`, `cp`, `mv`, `rm`, `find`, `grep`, `cut`, `sort`, `head`, `tail` |
-| 2   | Permissions & Ownership | `chmod`, `chown`, `umask`, `groups`, `useradd`, `passwd`, `sudoers` |
-| 3   | Processes & Services | `ps`, `top`, `kill`, `systemctl`, `journalctl`, `htop` |
-| 4   | Networking, SSH | `ssh`, `scp`, `netstat`, `ss`, `curl`, `wget`, `nc` |
-| 5   | Archiving + File Types | `tar`, `gzip`, `bzip2`, `zip`, `rsync`, `stat`, `file` |
-
-📂 Output: Practice logs, screenshots, notes, cheat sheets pushed to GitHub.
+| 1   | Navigation, File Handling | `ls`, `cd`, `mkdir`, `touch`, `find`, `grep`, etc. |
+| 2   | Permissions & Ownership | `chmod`, `chown`, `umask`, `sudoers`, users & groups |
+| 3   | Processes & Services | `ps`, `top`, `kill`, `systemctl`, `htop` |
+| 4   | Networking, SSH | `ssh`, `scp`, `netstat`, `ss`, `curl`, `wget` |
+| 5   | Archiving & Compression | `tar`, `gzip`, `rsync`, backups & restores |
 
 ---
 
@@ -39,11 +38,9 @@ This is a hardcore, structured DevOps learning journey designed to take you from
 
 | Day | Topics | Execution |
 |-----|--------|-----------|
-| 6   | Git Internals | `init`, `add`, `commit`, `status`, `diff`, `log`, `reset` |
-| 7   | Branching, Merging | `branch`, `merge`, `rebase`, `stash`, conflict resolution |
-| 8   | GitHub Flow | Fork, PR, Issues, Actions, GitHub CLI, Pull Requests |
-
-📂 Output: GitHub repo with branching strategy, feature merges, and PRs.
+| 6   | Git Internals | `init`, `commit`, `status`, `log`, `reset`, HEAD |
+| 7   | Branching, Merging | `branch`, `merge`, `rebase`, conflict resolution |
+| 8   | GitHub Flow | Fork, clone, pull request, actions, GitHub CLI |
 
 ---
 
@@ -51,13 +48,11 @@ This is a hardcore, structured DevOps learning journey designed to take you from
 
 | Day | Topics | Execution |
 |-----|--------|-----------|
-| 9   | Bash Basics | Variables, Loops, Conditions, Functions |
-| 10  | Cleanup Automation | Script to clean up temp/log files |
-| 11  | Monitoring Scripts | Disk usage, CPU load alerts |
-| 12  | Network Tools | Ping monitor, SSH logins |
-| 13  | Log Analysis | Script to extract errors from logs |
-
-📂 Output: Push all scripts to GitHub with documentation.
+| 9   | Bash Basics | Variables, loops, functions, conditions |
+| 10  | File Automation | Temp/log cleanup, cron jobs |
+| 11  | Monitoring Scripts | Disk space, memory, load |
+| 12  | Network Scripts | Ping monitors, SSH logins |
+| 13  | Log Parsers | Error filtering, alerts from logs |
 
 ---
 
@@ -65,14 +60,12 @@ This is a hardcore, structured DevOps learning journey designed to take you from
 
 | Day | Topics | Execution |
 |-----|--------|-----------|
-| 14  | Jenkins Setup | Install locally or on cloud |
-| 15  | Maven Projects | Basic Maven build pipeline |
-| 16  | Integrate Jenkins + GitHub | SCM configuration |
-| 17  | SonarQube + Tomcat | Code quality and deployment |
-| 18  | Jenkins Pipelines | Declarative + Scripted Pipelines |
-| 19  | Mini Project | CI/CD for Bash or Java App |
-
-📂 Output: Full CI/CD pipeline repo + Jenkinsfile in GitHub.
+| 14  | Jenkins Setup | On local or cloud (EC2) |
+| 15  | Maven Projects | Setup & build lifecycle |
+| 16  | GitHub + Jenkins | Webhooks, SCM integration |
+| 17  | SonarQube & Tomcat | Static code analysis & deploy |
+| 18  | Jenkins Pipelines | Declarative + scripted |
+| 19  | Mini Project | CI/CD for sample app |
 
 ---
 
@@ -80,14 +73,12 @@ This is a hardcore, structured DevOps learning journey designed to take you from
 
 | Day | Topics | Execution |
 |-----|--------|-----------|
-| 20  | Docker Basics | Install, `run`, `build`, `exec`, `logs`, `ps` |
-| 21  | Dockerfile | Create image from bash script |
-| 22  | Docker Volumes & Networks | Data persistence & isolation |
-| 23  | Docker Compose | Multi-container setup |
-| 24  | DockerHub | Push/pull your images |
-| 25  | Containerize Project | Dockerize bash or java repo |
-
-📂 Output: Dockerfile, Compose YAML, GitHub Repo.
+| 20  | Docker Basics | Images, containers, `run`, `build`, `exec` |
+| 21  | Dockerfile | Build custom images |
+| 22  | Volumes & Networks | Persistence, inter-container networking |
+| 23  | Docker Compose | Multi-container stack |
+| 24  | DockerHub | Push & pull your own image |
+| 25  | Mini Project | Dockerize a real app |
 
 ---
 
@@ -95,51 +86,57 @@ This is a hardcore, structured DevOps learning journey designed to take you from
 
 | Day | Topics | Execution |
 |-----|--------|-----------|
-| 26  | K8s Intro | `kubectl`, Pods, Services, Deployments |
-| 27  | Deployments | Scale & update applications |
-| 28  | ConfigMaps & Secrets | Secure app configs |
-| 29  | Mini Project | Deploy containerized app on K8s |
-| 30  | GitHub Push | K8s manifests in GitHub repo |
-
-📂 Output: K8s YAMLs and deployment project in GitHub.
+| 26  | K8s Basics | Pods, Services, Deployments, `kubectl` |
+| 27  | Deployments & Scaling | Rolling updates, replicas |
+| 28  | Secrets & ConfigMaps | Secure configurations |
+| 29  | Helm Intro | Templates, charts |
+| 30  | Mini Project | Deploy containerized app on K8s |
 
 ---
 
-## 🌍 Phase 7: Terraform & Infrastructure as Code (Day 31–35)
+## 🌍 Phase 7: Terraform & Infrastructure as Code (IaC) (Day 31–35)
 
 | Day | Topics | Execution |
 |-----|--------|-----------|
-| 31  | IaC Basics | Install Terraform, `init`, `apply`, `destroy` |
-| 32  | Terraform AWS | EC2, VPC, Security Groups |
-| 33  | Variables & Modules | Reusability in code |
-| 34  | Mini Project | Infrastructure setup with Terraform |
-| 35  | GitHub Push | All code + Terraform plans pushed |
-
-📂 Output: Terraform projects in GitHub.
+| 31  | Terraform Basics | `init`, `apply`, `destroy`, providers |
+| 32  | AWS Resources | EC2, VPC, Security Groups |
+| 33  | State & Variables | Modules, input/output, `.tfvars` |
+| 34  | Remote Backends | S3 + DynamoDB, workspaces |
+| 35  | IaC Mini Project | Infra setup with automation |
 
 ---
 
-## 🚀 Phase 8: Resume, Projects & Mock Interviews (Day 36–40)
+## ☁️ Phase 8: Multi-Cloud Mastery (AWS + GCP + Azure) (Day 36–40)
 
 | Day | Topics | Execution |
 |-----|--------|-----------|
-| 36  | Resume Prep | DevOps-focused resume writing |
-| 37  | Project Portfolio | Push all project repos with README |
-| 38  | GitHub Optimization | Stars, forks, GitHub profile |
-| 39  | Mock Interviews | Behavioral + Technical Practice |
-| 40  | Final Touch | Job prep checklist |
+| 36  | AWS Deep Dive | IAM, EC2, S3, CLI, VPC, Key Pairs |
+| 37  | Secure Access | Public/Private IPs, Bastion Hosts, Security Groups |
+| 38  | SSO & Identity | IAM roles, SSO integration, MFA |
+| 39  | GCP + Azure Intro | Compute, Storage, IAM comparison |
+| 40  | Cloud Mini Project | Deploy app on AWS + use secure access config |
 
-📂 Output: Resume, LinkedIn, GitHub — all polished & job-ready.
+---
+
+## 🚀 Phase 9: Resume, Projects & Mock Interviews (Day 41–45)
+
+| Day | Topics | Execution |
+|-----|--------|-----------|
+| 41  | Resume Optimization | Tailor for 3 YOE DevOps roles |
+| 42  | GitHub Portfolio | Final touches, READMEs, stars, pinned repos |
+| 43  | LinkedIn + Outreach | Content + recruiter engagement |
+| 44  | Mock Interviews | Technical + behavioral drills |
+| 45  | Final Review | Portfolio wrap-up, job checklist |
 
 ---
 
 ## ✅ Pro Tips
 
-- 🔖 Create a separate GitHub repo per phase.
-- 📸 Document every day’s progress in folders like `Day_01`, `Day_02`, etc.
-- 📘 Maintain a log or markdown diary for your learning.
-- 🎯 Track daily goals and mark completed tasks with ✅.
+- 🗂️ Create a new GitHub repo for every phase/project.
+- 📘 Log daily learning in markdown with screenshots, commands, and notes.
+- 🧪 Document errors, fixes, and key learning.
+- 💻 Host mini projects on GitHub or cloud with demo links.
 
 ---
 
-**Let’s go Monk mode. You're not just learning DevOps — you're becoming unstoppable. 💪**
+This isn’t a course. It’s a transformation. Let's get it. 🔥
