@@ -1,108 +1,145 @@
-# Eat, Sleep, Linux → Git → DevOps → Repeat
+# 🧘‍♂️ DevOps Monk Mode - 45 Day Challenge
 
-## Mission: Job Ready DevOps Engineer in 45 Days
+Welcome to the **Eat, Sleep, Linux → Git → DevOps → Repeat** mission.
 
-## Strategy:
-# 🚀 DevOps Monk Mode - 45 Day Learning Plan
-
-Welcome to the **Hardcore DevOps Journey**. This plan is divided into 7 focused phases. Each phase includes daily hands-on execution tasks with clear deliverables.
+This is a hardcore, structured DevOps learning journey designed to take you from **Zero to Job-Ready DevOps Engineer in 45 Days** with hands-on projects, real-world tools, and resume-ready output.
 
 ---
 
-## 🧠 PHASE 1 → Hardcore Linux for DevOps (Days 1–12)
+## 🧭 Roadmap Overview
 
-| Day | Topics                    | Execution Tasks                                           | Output Expected                  |
-|-----|---------------------------|-----------------------------------------------------------|----------------------------------|
-| 1   | Linux Navigation Deep Dive | `ls`, `pwd`, `cd`, `mkdir`, `touch`, `cp`, `mv`, `rm`, `find`, `grep` | Commands Practiced, Output in GitHub |
-| 2   | Linux File Handling        | `cut`, `sort`, `head`, `tail`, `wc`, `du`, `df`, `stat`, `locate`     | Cheat Sheet in GitHub            |
-| 3   | Permissions & Ownership    | `chmod`, `chown`, `chgrp`, `umask`                                 | Lab Tasks, Notes in GitHub       |
-| 4   | User Management            | `useradd`, `passwd`, `groups`, `sudoers`                           | Create/Delete users              |
-| 5   | Process & Services         | `ps`, `top`, `htop`, `kill`, `systemctl`, `journalctl`             | Kill/Monitor services            |
-| 6   | Networking Basics          | `ssh`, `scp`, `curl`, `wget`, `netstat`, `ss`, `nc`                | SSH Practicals                   |
-| 7   | Archiving & Rsync          | `tar`, `zip`, `unzip`, `rsync`                                     | Backup/Restore Practice          |
-| 8   | Bash Scripting Basics      | Variables, Loops, Conditions, Functions                            | Write 5+ scripts                 |
-| 9   | Cron Jobs                  | `crontab`, `at`, scheduling tasks                                  | Setup real cronjobs              |
-| 10  | Logs & Troubleshooting     | `tail`, `less`, `grep`, `cut`                                      | Log Analysis                     |
-| 11  | Advanced Bash              | Arrays, Exit Codes, Arguments                                      | Shell Challenges                 |
-| 12  | Linux Mini Project         | Automate LAMP Setup or Cleanup Tasks                               | Push Project to GitHub           |
+| Phase | Focus Area | Duration |
+|-------|-------------|----------|
+| 1     | Linux for DevOps | 5 Days |
+| 2     | Git & GitHub (Advanced) | 3 Days |
+| 3     | Bash Scripting & Automation | 5 Days |
+| 4     | CI/CD (Jenkins + Maven + Tomcat + SonarQube) | 6 Days |
+| 5     | Docker & Containers | 6 Days |
+| 6     | Kubernetes | 5 Days |
+| 7     | Terraform & Infrastructure as Code (IaC) | 5 Days |
+| 8     | Resume, Projects, Mock Interviews | 5 Days |
 
 ---
 
-## 🔧 PHASE 2 → Git & GitHub Deep Dive (Days 13–17)
+## 📦 Phase 1: Linux for DevOps (Day 1–5)
 
-| Day | Topics                         | Execution                        |
-|-----|--------------------------------|----------------------------------|
-| 13  | Git Init, Add, Commit, Push, Clone | Hands-on with local repos       |
-| 14  | Branching & Merging            | Feature Branch Workflow          |
-| 15  | Git Ignore, Stash, Revert, Reset | Simulate real-world problems   |
-| 16  | GitHub Workflows               | Fork, PR, Issues, Actions Overview |
-| 17  | Mini Project                   | Create Repo, Branch Workflow, Merge Conflicts |
+| Day | Topics | Execution |
+|-----|--------|-----------|
+| 1   | Navigation, File Handling | `ls`, `pwd`, `cd`, `mkdir`, `touch`, `cp`, `mv`, `rm`, `find`, `grep`, `cut`, `sort`, `head`, `tail` |
+| 2   | Permissions & Ownership | `chmod`, `chown`, `umask`, `groups`, `useradd`, `passwd`, `sudoers` |
+| 3   | Processes & Services | `ps`, `top`, `kill`, `systemctl`, `journalctl`, `htop` |
+| 4   | Networking, SSH | `ssh`, `scp`, `netstat`, `ss`, `curl`, `wget`, `nc` |
+| 5   | Archiving + File Types | `tar`, `gzip`, `bzip2`, `zip`, `rsync`, `stat`, `file` |
 
----
-
-## 🧾 PHASE 3 → Bash Scripting & Automation (Days 18–22)
-
-| Day | Topics                    | Execution                       |
-|-----|---------------------------|----------------------------------|
-| 18  | Real World Automation     | Cleanup, Archiving               |
-| 19  | Monitoring Scripts        | Disk Usage Alerts                |
-| 20  | Networking Scripts        | Ping Monitor                     |
-| 21  | Logs Analysis Script      | Error Detector                   |
-| 22  | Push All Scripts to GitHub | Complete Repo                   |
+📂 Output: Practice logs, screenshots, notes, cheat sheets pushed to GitHub.
 
 ---
 
-## ⚙️ PHASE 4 → CI/CD with Jenkins (Days 23–27)
+## 🧬 Phase 2: Git & GitHub Advanced (Day 6–8)
 
-| Day | Topics                    | Execution                       |
-|-----|---------------------------|----------------------------------|
-| 23  | Jenkins Install & Setup   | Local or Cloud                   |
-| 24  | Jenkins Pipeline Jobs     | Scripted & Declarative           |
-| 25  | Integrating Git & Jenkins | Build Pipeline                   |
-| 26  | Automating with Jenkins   | Cron, Notifications              |
-| 27  | Mini Project              | CI/CD of Bash Script Repo        |
+| Day | Topics | Execution |
+|-----|--------|-----------|
+| 6   | Git Internals | `init`, `add`, `commit`, `status`, `diff`, `log`, `reset` |
+| 7   | Branching, Merging | `branch`, `merge`, `rebase`, `stash`, conflict resolution |
+| 8   | GitHub Flow | Fork, PR, Issues, Actions, GitHub CLI, Pull Requests |
 
----
-
-## 🐳 PHASE 5 → Docker & Containers (Days 28–35)
-
-| Day | Topics                    | Execution                       |
-|-----|---------------------------|----------------------------------|
-| 28  | Docker Install            | Practice basic commands          |
-| 29  | Dockerfile & Images       | Create custom images             |
-| 30  | Docker Volumes & Networks | Practical examples               |
-| 31  | Docker Compose            | Multi-container setups           |
-| 32  | Push Docker Images        | DockerHub usage                  |
-| 33  | Mini Project              | Containerize Bash Apps           |
-| 34  | Docker Best Practices     | Notes                            |
-| 35  | Project Push              | GitHub                           |
+📂 Output: GitHub repo with branching strategy, feature merges, and PRs.
 
 ---
 
-## ☸️ PHASE 6 → Kubernetes Basics (Days 36–40)
+## ⚙️ Phase 3: Bash Scripting & Automation (Day 9–13)
 
-| Day | Topics                    | Execution                       |
-|-----|---------------------------|----------------------------------|
-| 36  | K8s Basics                | PODs, Deployment, Services       |
-| 37  | Kubectl Practice          | Deploy Apps                      |
-| 38  | ConfigMaps & Secrets      | Usage in K8s                     |
-| 39  | Mini Project              | Deploy Docker App in K8s         |
-| 40  | Project Push              | GitHub                           |
+| Day | Topics | Execution |
+|-----|--------|-----------|
+| 9   | Bash Basics | Variables, Loops, Conditions, Functions |
+| 10  | Cleanup Automation | Script to clean up temp/log files |
+| 11  | Monitoring Scripts | Disk usage, CPU load alerts |
+| 12  | Network Tools | Ping monitor, SSH logins |
+| 13  | Log Analysis | Script to extract errors from logs |
 
----
-
-## ☁️ PHASE 7 → Cloud (AWS Focus) (Days 41–45)
-
-| Day | Topics                    | Execution                       |
-|-----|---------------------------|----------------------------------|
-| 41  | AWS IAM, EC2              | Launch servers                   |
-| 42  | AWS S3, CLI               | Storage Basics                   |
-| 43  | AWS CloudWatch            | Monitoring                       |
-| 44  | AWS + Jenkins             | Cloud Pipeline                   |
-| 45  | Resume, Projects Finalization | Mock Interview Ready         |
+📂 Output: Push all scripts to GitHub with documentation.
 
 ---
 
-> ✅ **Pro Tip**: Create a separate GitHub repo for each phase. Log your daily output using folders named `Day_01`, `Day_02`, etc., and commit your scripts, notes, and screenshots as needed.
+## 🔁 Phase 4: CI/CD with Jenkins, Maven, Tomcat, SonarQube (Day 14–19)
+
+| Day | Topics | Execution |
+|-----|--------|-----------|
+| 14  | Jenkins Setup | Install locally or on cloud |
+| 15  | Maven Projects | Basic Maven build pipeline |
+| 16  | Integrate Jenkins + GitHub | SCM configuration |
+| 17  | SonarQube + Tomcat | Code quality and deployment |
+| 18  | Jenkins Pipelines | Declarative + Scripted Pipelines |
+| 19  | Mini Project | CI/CD for Bash or Java App |
+
+📂 Output: Full CI/CD pipeline repo + Jenkinsfile in GitHub.
 
 ---
+
+## 🐳 Phase 5: Docker & Containers (Day 20–25)
+
+| Day | Topics | Execution |
+|-----|--------|-----------|
+| 20  | Docker Basics | Install, `run`, `build`, `exec`, `logs`, `ps` |
+| 21  | Dockerfile | Create image from bash script |
+| 22  | Docker Volumes & Networks | Data persistence & isolation |
+| 23  | Docker Compose | Multi-container setup |
+| 24  | DockerHub | Push/pull your images |
+| 25  | Containerize Project | Dockerize bash or java repo |
+
+📂 Output: Dockerfile, Compose YAML, GitHub Repo.
+
+---
+
+## ☸️ Phase 6: Kubernetes (Day 26–30)
+
+| Day | Topics | Execution |
+|-----|--------|-----------|
+| 26  | K8s Intro | `kubectl`, Pods, Services, Deployments |
+| 27  | Deployments | Scale & update applications |
+| 28  | ConfigMaps & Secrets | Secure app configs |
+| 29  | Mini Project | Deploy containerized app on K8s |
+| 30  | GitHub Push | K8s manifests in GitHub repo |
+
+📂 Output: K8s YAMLs and deployment project in GitHub.
+
+---
+
+## 🌍 Phase 7: Terraform & Infrastructure as Code (Day 31–35)
+
+| Day | Topics | Execution |
+|-----|--------|-----------|
+| 31  | IaC Basics | Install Terraform, `init`, `apply`, `destroy` |
+| 32  | Terraform AWS | EC2, VPC, Security Groups |
+| 33  | Variables & Modules | Reusability in code |
+| 34  | Mini Project | Infrastructure setup with Terraform |
+| 35  | GitHub Push | All code + Terraform plans pushed |
+
+📂 Output: Terraform projects in GitHub.
+
+---
+
+## 🚀 Phase 8: Resume, Projects & Mock Interviews (Day 36–40)
+
+| Day | Topics | Execution |
+|-----|--------|-----------|
+| 36  | Resume Prep | DevOps-focused resume writing |
+| 37  | Project Portfolio | Push all project repos with README |
+| 38  | GitHub Optimization | Stars, forks, GitHub profile |
+| 39  | Mock Interviews | Behavioral + Technical Practice |
+| 40  | Final Touch | Job prep checklist |
+
+📂 Output: Resume, LinkedIn, GitHub — all polished & job-ready.
+
+---
+
+## ✅ Pro Tips
+
+- 🔖 Create a separate GitHub repo per phase.
+- 📸 Document every day’s progress in folders like `Day_01`, `Day_02`, etc.
+- 📘 Maintain a log or markdown diary for your learning.
+- 🎯 Track daily goals and mark completed tasks with ✅.
+
+---
+
+**Let’s go Monk mode. You're not just learning DevOps — you're becoming unstoppable. 💪**
