@@ -1,4 +1,4 @@
-# 🧘‍♂️ DevOps Monk Mode - 45 Day Challenge
+# 🧘‍♂️ DevOps Monk Mode - 45 0 Day Challenge
 
 Welcome to the **Eat, Sleep, Linux → Git → DevOps → Repeat** mission.
 
