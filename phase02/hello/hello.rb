@@ -1,3 +1,4 @@
+# Author - Prem
 # Default is "World"
 name = ARGV.first || "World"
 
