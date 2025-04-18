@@ -6,6 +6,7 @@ Features to Cover (Recap of All Topics):
 
 Module	Concepts Covered
 ---------------
+
 | CLI Menu	| Loops, case, read, echo, input handling |
 | Backups	| tar, mkdir, date, error handling |
 | Disk + CPU Monitoring	| df, top, free, logging |
@@ -15,6 +16,7 @@ Module	Concepts Covered
 | Cleanup Tool	| Delete old files, logs, temp dirs |
 | Log Management	| Logging everything done via toolkit |
 | Trap Signals	| trap for safe exits |
+
 --------------
 
 
