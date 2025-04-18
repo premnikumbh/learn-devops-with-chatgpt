@@ -23,7 +23,7 @@ while true; do
   echo "3. Git Auto Push"
   echo "4. Deploy Static Site"
   echo "5. Cleanup Logs & Temps"
-  echo "6. Setup Cron Job"
+  echo "6. Manage Cron Job"
   echo "7. Exit"
   read -p "Choose option: " opt
 
@@ -33,7 +33,7 @@ while true; do
     3) bash scripts/git-push.sh ;;
     4) bash scripts/deploy.sh ;;
     5) bash scripts/cleanup.sh ;;
-    6) bash scripts/schedule.sh ;;
+    6) bash scripts/manage_cronjobs.sh ;;
     7) log "User exited command center"; break ;;
     *) echo "Invalid option." ;;
   esac
