@@ -7,6 +7,13 @@ function log() {
   echo "$(date): $1" | tee -a "$LOG_FILE"
 }
 
+function deploy_static_site() {
+  DEPLOY_DIR="$HOME/devops-deploy"
+  mkdir -p "$DEPLOY_DIR"
+  cp -r ./static-site/* "$DEPLOY_DIR"
+  echo "$(date): Deployed static site to $DEPLOY_DIR" | tee -a $LOG_FILE
+}
+
 trap "echo 'Exiting safely...'; exit" SIGINT
 
 while true; do
